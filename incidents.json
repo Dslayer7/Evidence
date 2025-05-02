@@ -1,0 +1,179 @@
+{
+  "incidents": [
+    {
+      "id": "inc001",
+      "date": "2025-02-15",
+      "time": "14:30",
+      "title": {
+        "en": "Verbal Abuse During Team Meeting",
+        "ja": "チーム会議中の言葉による暴力"
+      },
+      "category": {
+        "en": "Verbal Abuse",
+        "ja": "言葉による暴力"
+      },
+      "description": {
+        "en": "During the weekly team meeting, my supervisor criticized my work in front of colleagues using derogatory language. He called my presentation 'completely worthless' and said I was 'incompetent' while pointing at me aggressively. This occurred after I had raised concerns about unrealistic project deadlines the previous day.",
+        "ja": "週次チーム会議中、上司は同僚の前で侮辱的な言葉を使って私の仕事を批判しました。私のプレゼンテーションを「まったく価値がない」と呼び、攻撃的に私を指さしながら「無能だ」と言いました。これは、前日に非現実的なプロジェクトの締め切りについて懸念を表明した後に発生しました。"
+      },
+      "evidence": [
+        {
+          "type": "audio",
+          "url": "evidence/audio/meeting-recording-20250215.mp3",
+          "description": {
+            "en": "Audio recording of the meeting",
+            "ja": "会議の音声記録"
+          }
+        },
+        {
+          "type": "image",
+          "url": "evidence/images/email-screenshot-20250215.jpg",
+          "description": {
+            "en": "Screenshot of follow-up email discussing the incident",
+            "ja": "インシデントについて話し合うフォローアップメールのスクリーンショット"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inc002",
+      "date": "2025-02-20",
+      "time": "10:15",
+      "title": {
+        "en": "Excessive Overtime Demands",
+        "ja": "過剰な残業要求"
+      },
+      "category": {
+        "en": "Excessive Work Demands",
+        "ja": "過大な要求"
+      },
+      "description": {
+        "en": "My supervisor demanded that I stay late to complete a project that was not originally my responsibility. When I explained I had family obligations, he stated that my commitment to the company was questionable and implied this would affect my upcoming performance review. This has been a recurring pattern over the past month.",
+        "ja": "上司は、本来私の責任ではなかったプロジェクトを完了するために残業するよう要求しました。家族の義務があると説明すると、会社への私のコミットメントは疑わしいと述べ、これが今後のパフォーマンスレビューに影響すると示唆しました。これは過去1ヶ月間、繰り返しのパターンとなっています。"
+      },
+      "evidence": [
+        {
+          "type": "image",
+          "url": "evidence/images/chat-screenshot-20250220.jpg",
+          "description": {
+            "en": "Screenshot of chat messages showing the demands",
+            "ja": "要求を示すチャットメッセージのスクリーンショット"
+          }
+        },
+        {
+          "type": "document",
+          "url": "evidence/documents/timesheet-20250220.pdf",
+          "description": {
+            "en": "Timesheet showing excessive overtime hours",
+            "ja": "過剰な残業時間を示すタイムシート"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inc003",
+      "date": "2025-03-01",
+      "time": "09:45",
+      "title": {
+        "en": "Exclusion from Important Meetings",
+        "ja": "重要な会議からの排除"
+      },
+      "category": {
+        "en": "Isolation",
+        "ja": "人間関係からの切り離し"
+      },
+      "description": {
+        "en": "I discovered that a departmental planning meeting had been held without my knowledge or invitation, despite my role as team lead for the project being discussed. When I inquired about this, my manager claimed it was an 'oversight' but this is the third such incident in two weeks. Decisions were made that directly impact my work and responsibilities.",
+        "ja": "私は、議論されているプロジェクトのチームリーダーとしての私の役割にもかかわらず、私の知識や招待なしに部門計画会議が開催されたことを発見しました。これについて問い合わせたとき、マネージャーはそれが「見落とし」だと主張しましたが、これは2週間で3回目のそのような出来事です。私の仕事と責任に直接影響する決定が下されました。"
+      },
+      "evidence": [
+        {
+          "type": "image",
+          "url": "evidence/images/email-meeting-invite-20250301.jpg",
+          "description": {
+            "en": "Screenshot of meeting invite showing all other team members included",
+            "ja": "他のすべてのチームメンバーが含まれていることを示す会議招待のスクリーンショット"
+          }
+        },
+        {
+          "type": "document",
+          "url": "evidence/documents/meeting-minutes-20250301.pdf",
+          "description": {
+            "en": "Meeting minutes showing decisions affecting my projects",
+            "ja": "私のプロジェクトに影響する決定を示す会議議事録"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inc004",
+      "date": "2025-03-05",
+      "time": "13:20",
+      "title": {
+        "en": "Intimidating Physical Behavior",
+        "ja": "威圧的な身体的行動"
+      },
+      "category": {
+        "en": "Physical Attack",
+        "ja": "身体的攻撃"
+      },
+      "description": {
+        "en": "During a one-on-one meeting in his office, my supervisor became angry when I questioned a project timeline. He stood up suddenly, slammed his fist on the desk, and leaned over me in a threatening manner. He raised his voice significantly and blocked the door when I attempted to leave the situation.",
+        "ja": "彼のオフィスでの1対1の会議中、プロジェクトのタイムラインについて質問したとき、上司は怒りました。彼は突然立ち上がり、机に拳を叩きつけ、脅すような態度で私に身を乗り出しました。声を大きく上げ、状況から離れようとしたとき、ドアをブロックしました。"
+      },
+      "evidence": [
+        {
+          "type": "audio",
+          "url": "evidence/audio/meeting-recording-20250305.mp3",
+          "description": {
+            "en": "Audio recording of the confrontation",
+            "ja": "対立の音声記録"
+          }
+        },
+        {
+          "type": "image",
+          "url": "evidence/images/witness-statement-20250305.jpg",
+          "description": {
+            "en": "Statement from colleague who witnessed the aftermath",
+            "ja": "その後を目撃した同僚からの声明"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inc005",
+      "date": "2025-03-08",
+      "time": "11:05",
+      "title": {
+        "en": "Intrusive Personal Questions",
+        "ja": "侵入的な個人的質問"
+      },
+      "category": {
+        "en": "Personal Intrusion",
+        "ja": "個の侵害"
+      },
+      "description": {
+        "en": "My supervisor repeatedly asked intrusive questions about my personal life during a performance review, including about my relationship status, family planning decisions, and whether my personal commitments would 'get in the way' of work responsibilities. When I expressed discomfort, he insisted these questions were relevant to my career progression.",
+        "ja": "上司はパフォーマンスレビュー中に、私の交際状況、家族計画の決定、そして個人的なコミットメントが仕事の責任の「邪魔になるか」などについて、繰り返し侵入的な質問をしました。不快感を表明したとき、彼はこれらの質問が私のキャリア進展に関連していると主張しました。"
+      },
+      "evidence": [
+        {
+          "type": "audio",
+          "url": "evidence/audio/review-recording-20250308.mp3",
+          "description": {
+            "en": "Audio recording of the performance review",
+            "ja": "パフォーマンスレビューの音声記録"
+          }
+        },
+        {
+          "type": "document",
+          "url": "evidence/documents/hr-complaint-20250308.pdf",
+          "description": {
+            "en": "Copy of complaint filed with HR department",
+            "ja": "人事部に提出された苦情のコピー"
+          }
+        }
+      ]
+    }
+  ]
+}
