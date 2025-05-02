@@ -268,11 +268,16 @@
 @media (max-width: 768px) {
     .form-row {
         flex-direction: column;
-        gap: 0;
+        gap: 0.5rem;
+    }
+    
+    .form-group {
+        width: 100%;
     }
     
     .evidence-input-row {
         flex-wrap: wrap;
+        gap: 0.5rem;
     }
     
     .evidence-type {
@@ -289,5 +294,26 @@
     .add-evidence-btn,
     .remove-evidence-btn {
         margin-left: auto;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    #ai-enhance-btn, #save-incident-btn {
+        width: 100%;
+    }
+    
+    /* Improve touch targets */
+    button, 
+    input[type="submit"],
+    input[type="button"] {
+        min-height: 44px;
+    }
+    
+    /* Ensure adequate spacing for mobile tapping */
+    .evidence-input-container {
+        margin-bottom: 1.5rem;
     }
 }
