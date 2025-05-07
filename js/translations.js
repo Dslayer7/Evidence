@@ -33,7 +33,8 @@ const translations = {
         description: "Description:",
         evidence: "Evidence:",
         keyQuotes: "Key-quotes:",
-        viewOriginal: "View Original Email",
+        viewOriginalEmail: "View Original Email",
+        viewBilingualEvidence: "View Bilingual Evidence",
         downloadPdf: "Download PDF",
         
         // Categories
@@ -99,7 +100,8 @@ const translations = {
         description: "説明:",
         evidence: "証拠:",
         keyQuotes: "重要な引用:",
-        viewOriginal: "元のメールを見る",
+        viewOriginalEmail: "元のメールを見る",
+        viewBilingualEvidence: "バイリンガル証拠を見る",
         downloadPdf: "PDFをダウンロード",
         
         // Categories

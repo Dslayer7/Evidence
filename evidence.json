@@ -2,6 +2,8 @@
     "incidents": [
       {
         "evidence_type": "email",
+        "title_en": "Accusation of Insubordination after meeting with Kasumi",
+        "title_ja": "Kasumiとの面談後、職務命令違反の告発",
         "evidence_file_title": "email01_2025-04-10_AccusationOfInsubordination",
         "email_thread_details": {
           "date_range": {
@@ -39,7 +41,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "Email thread initiated by S. Forrester (Manager) on 2025-04-10 accusing D. Delacruz (Employee) of failure to follow instructions regarding external meetings (requiring manager presence/calendar booking), citing prior communication and GM request. Forrester labels this 'insubordination,' states it 'will not be tolerated,' and mandates a formal meeting. D. Delacruz responds on 2025-04-15 requesting meeting confirmation (now involving J. Masigan) and specific examples for the 'accusations'. Delacruz explicitly states the work environment involves 'targeted oversight', is 'tense', impacts performance, causes 'significant mental toll', and notes lack of prior constructive feedback.",
+        "full_summary": "Email thread initiated by S. Forrester (Manager) on 2025-04-10 accusing D. Delacruz (Employee) of failure to follow instructions regarding external meetings (requiring manager presence/calendar booking), citing prior communication and GM request. Forrester labels this 'insubordination,' states it 'will not be tolerated,' and mandates a formal meeting. D. Delacruz responds on 2025-04-15 requesting meeting confirmation (now involving J. Masigan) and specific examples for the 'accusations'. Delacruz explicitly states the work environment involves 'targeted oversight', is 'tense', impacts performance, causes 'significant mental toll', and notes lack of prior constructive feedback.",
+        "full_summary_ja": "S. Forrester氏がD. Delacruz氏にメール（cc: Y. Morizono氏, J. Masigan氏）。以前の指示と総支配人（シェーン氏）からの外部業者会議にはカレンダー予約とマネージャー同席が必要であるとの要請に言及。会議への同席とカレンダー共有を指示した過去のメールを引用。Forrester氏はDelacruz氏が「指示に従えない」と述べ、これを「職務命令違反」とラベル付けし、「許容されない」と断言し、4月11日に「なぜ指示に従えないのかについての正式な議論」のための会議を義務付けています。D. Delacruz氏が返信し、「職務命令違反の告発」に関する会議（現在はJ. Masigan氏が関与）の確認を要請。Delacruz氏は具体的な例を要求し、そのようなレッテルを正当化する行動に気づいていないと述べ、透明性を求めています。彼は以前に認識されていた協力的な連携に言及しますが、現在の環境を「標的を絞った監視」、「緊張した」、「逆効果な」ものであり、パフォーマンスに影響を与え、「重大な精神的負担」を引き起こしていると説明。懸念事項は建設的な解決のために早期に対処されるべきだったと述べています。",
         "potential_indicators_of_power_harassment": [
           "Accusation without specific examples in the initial email.",
           "Use of potentially threatening language ('insubordination will not be tolerated').",
@@ -65,6 +68,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Instruction to pause work after meeting with Shane",
+        "title_ja": "Shaneとの面談後、作業の一時停止の指示",
         "evidence_file_title": "email02_2025-04-15_InstructionToPauseWork",
         "email_thread_details": {
           "date_range": {
@@ -102,7 +107,8 @@
              }
           ]
         },
-        "summary_for_lawyers": "On 2025-04-15, S. Edwards (GM) requests support for M. Silvestre (Angela) for the GM conference, suggesting D. Delacruz may need to assist. S. Forrester responds affirmatively, explicitly instructing D. Delacruz via email (cc'd) that he 'can pause on some of his work as it is not pressing' and should follow up with M. Silvestre directly.",
+        "full_summary": "On 2025-04-15, S. Edwards (GM) requests support for M. Silvestre (Angela) for the GM conference, suggesting D. Delacruz may need to assist. S. Forrester responds affirmatively, explicitly instructing D. Delacruz via email (cc'd) that he 'can pause on some of his work as it is not pressing' and should follow up with M. Silvestre directly.",
+        "full_summary_ja": "2025-04-15、S. Edwards氏（総支配人）はM. Silvestre氏（Angela）のGM会議のためにD. Delacruz氏のサポートを要求。S. Forrester氏は肯定的に応答し、D. Delacruz氏をメール（cc'd）で明確に指示：「急ぎではない彼の仕事の一部を一時停止できる」とし、M. Silvestre氏（Angela）に直接フォローアップするよう指示。",
         "potential_indicators_of_power_harassment": [
           "While this email itself may appear as standard work reassignment, it could become relevant if later used to contradict performance expectations or deadlines for the paused work (See linking potential below)."
         ],
@@ -118,6 +124,8 @@
       },
       {
         "evidence_type": "meeting_cancellation",
+        "title_en": "Meeting cancellation for F&B Strategy",
+        "title_ja": "F&B戦略の面談のキャンセル",
         "evidence_file_title": "email03_2025-04-17_MeetingCancellationF&BStrategy",
         "meeting_details": {
           "subject": "F&B Strategy - RM, Distribution & Marketing",
@@ -146,7 +154,8 @@
           "importance": "High",
           "cancellation_sent_date": "Thu 4/17/2025 11:56 AM"
          },
-        "summary_for_lawyers": "A high-importance recurring meeting titled 'F&B Strategy - RM, Distribution & Marketing', originally scheduled bi-weekly starting Dec 12, 2024, involving key personnel including D. Delacruz, S. Forrester, S. Edwards, M. Silvestre, Y. Morizono, and J. Kannan, was cancelled by the organizer J. Kannan on April 17, 2025, at 11:56 AM.",
+        "full_summary": "A high-importance recurring meeting titled 'F&B Strategy - RM, Distribution & Marketing', originally scheduled bi-weekly starting Dec 12, 2024, involving key personnel including D. Delacruz, S. Forrester, S. Edwards, M. Silvestre, Y. Morizono, and J. Kannan, was cancelled by the organizer J. Kannan on April 17, 2025, at 11:56 AM.",
+        "full_summary_ja": "2025-04-17、J. Kannan氏が主催者として、2024年12月12日から週2回開催予定の「F&B戦略 - RM、配分、マーケティング」の高重要度の再発するミーティングを4月17日午後11時56分にキャンセル。関係人物にはD. Delacruz氏、S. Forrester氏、S. Edwards氏、M. Silvestre氏、Y. Morizono氏、J. Kannan氏が含まれる。",
         "potential_indicators_of_power_harassment": [
            "Considered alone, a meeting cancellation is typically operational. However, its relevance might increase if it forms part of a pattern of excluding individuals from strategic discussions or if the cancellation impacts projects discussed in other evidence."
         ],
@@ -161,6 +170,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Heartist Communication Meeting Task",
+        "title_ja": "Heartistコミュニケーションミーティングタスク",
         "evidence_file_title": "email04_2025-03-25_HeartistCommunicationMeetingTask",
         "email_thread_details": {
           "date_range": {
@@ -268,7 +279,8 @@
                   }
           ]
         },
-        "summary_for_lawyers": "This thread details the assignment and deadline issues for the F&B Heartist Communication Meeting slides (due Apr 24). Initial communication sets up the meeting (Mar 25, Apr 7). H. Nakano forwards template (Apr 15). Y. Morizono assigns task to D. Delacruz with Apr 17 deadline (Apr 15). On Apr 17, Y. Morizono asks if it can be done 'today'. D. Delacruz responds (4:31 PM) he may not finish due to concurrent menu tag work and PPT edit issues. S. Forrester immediately replies (4:39 PM) setting a new deadline of 'midday 18th', instructing completion 'first thing tomorrow'. On Apr 18 (9:09 AM), D. Delacruz flags that 'first thing' completion may not be possible due to ongoing menu tag work complexity and asks for priority confirmation.",
+        "full_summary": "This thread details the assignment and deadline issues for the F&B Heartist Communication Meeting slides (due Apr 24). Initial communication sets up the meeting (Mar 25, Apr 7). H. Nakano forwards template (Apr 15). Y. Morizono assigns task to D. Delacruz with Apr 17 deadline (Apr 15). On Apr 17, Y. Morizono asks if it can be done 'today'. D. Delacruz responds (4:31 PM) he may not finish due to concurrent menu tag work and PPT edit issues. S. Forrester immediately replies (4:39 PM) setting a new deadline of 'midday 18th', instructing completion 'first thing tomorrow'. On Apr 18 (9:09 AM), D. Delacruz flags that 'first thing' completion may not be possible due to ongoing menu tag work complexity and asks for priority confirmation.",
+        "full_summary_ja": "このスレッドは、F&Bのハーティストコミュニケーションミーティングのスライド（4月24日まで）の割り当てと期限に関する問題を説明します。最初のコミュニケーションはミーティングを設定します（3月25日、4月7日）。H. Nakano氏は4月15日にテンプレートを転送します。Y. Morizono氏はD. Delacruz氏に4月17日の期限でタスクを割り当てます（4月15日）。4月17日、Y. Morizono氏は「今日」にできるか尋ねます。D. Delacruz氏は（4月17日午後4時31分）彼は同時にメニュータグ作業とPPT編集の問題により、完成させることができないかもしれませんと回答します。S. Forrester氏は（4月17日午後4時39分）新しい期限を「18日正午」に設定し、「明日一番に」完成させることを指示します。4月18日（9時09分）、D. Delacruz氏は「一番に」完成させることができない可能性があると述べ、優先事項を確認するよう尋ねます。",
         "potential_indicators_of_power_harassment": [
             "Conflicting priorities/Urgency: Task assigned on Apr 15 for Apr 17. On Apr 17, urgency is stressed ('by Today??'), then immediately shifted by a higher manager to 'first thing tomorrow', creating pressure.",
             "Lack of clarity on priorities: D. Delacruz explicitly asks for clarification on whether to pause other demanding tasks (menu tags) to meet the new urgent deadline, indicating a potential conflict set up by management.",
@@ -290,6 +302,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "BakiBaki Project Coordination",
+        "title_ja": "BakiBakiプロジェクトの調整",
         "evidence_file_title": "email05_2025-04-08_BakiBakiProjectCoordination",
         "email_thread_details": {
           "date_range": {
@@ -407,7 +421,8 @@
                  }
           ]
         },
-        "summary_for_lawyers": "This thread documents coordination for the 'Baki Baki' artist collaboration event. S. Edwards (GM) initiates (Apr 8), seeking promotion start, artwork finalization, and logistics check. M. Silvestre (Marketing) responds (Apr 8) citing delays/workload due to staff absence and GM conference demands. S. Edwards acknowledges (Apr 9), suggests focus on post-PR, and instructs D. Delacruz to support Marketing. D. Delacruz responds proactively (Apr 9) detailing outreach to artist, suggesting promotional ideas (displaying art, SNS collab, leveraging Apr 20 retro event with influencers). After confirming the retro event date (Apr 9), S. Edwards adds positive comment and maintenance instruction (Apr 9). M. Silvestre requests specific info for offer page (Apr 9). D. Delacruz provides update (Apr 11) with portfolio, sketch changes, logo query, and relays artist's request for a hotel room during the event (Apr 18-24) due to physical demands, seeking approval.",
+        "full_summary": "This thread documents coordination for the 'Baki Baki' artist collaboration event. S. Edwards (GM) initiates (Apr 8), seeking promotion start, artwork finalization, and logistics check. M. Silvestre (Marketing) responds (Apr 8) citing delays/workload due to staff absence and GM conference demands. S. Edwards acknowledges (Apr 9), suggests focus on post-PR, and instructs D. Delacruz to support Marketing. D. Delacruz responds proactively (Apr 9) detailing outreach to artist, suggesting promotional ideas (displaying art, SNS collab, leveraging Apr 20 retro event with influencers). After confirming the retro event date (Apr 9), S. Edwards adds positive comment and maintenance instruction (Apr 9). M. Silvestre requests specific info for offer page (Apr 9). D. Delacruz provides update (Apr 11) with portfolio, sketch changes, logo query, and relays artist's request for a hotel room during the event (Apr 18-24) due to physical demands, seeking approval.",
+        "full_summary_ja": "このスレッドは、'Baki Baki'アーティストコラボレーションイベントの調整を文書化します。S. Edwards（GM）が（4月8日）開始、昇進開始、作品完成、そして物流チェックを求める（4月8日）を開始します。M. Silvestre（マーケティング）が（4月8日）スタッフの欠如とGMカンファレンスの要請により遅延/負荷を主張します。S. Edwardsが（4月9日）認め、ポストPRに焦点を当て、マーケティングをサポートするようにD. Delacruzに指示します。D. Delacruzが（4月9日）アーティストに向けたコミュニケーションを積極的に（4月9日）詳細を説明し、SNSコラボレーション、インフルエンサーの招待、4月20日のレトロイベントを活用するためのプロモーションアイデアを提案します。レトロイベントの日程を確認（4月9日）後、S. Edwardsは（4月9日）ポジティブなコメントと維持指示を追加します。M. Silvestreは（4月9日）オファーページの特定の情報を要求します。D. Delacruzは（4月11日）ポートフォリオ、スケッチの変更、ロゴの質問、そしてアーティストの要望を伝え、ライブドローイング期間中にホテルの客室を提供するかどうか（推定4月18日～24日）を尋ね、承認を求めます。",
         "potential_indicators_of_power_harassment": [
             "Ignoring/Downplaying Suggestions (Potential - based on filename): While the email thread shows D. Delacruz actively proposing ideas (SNS collab, influencer outreach, leveraging retro event), the file name 'ideas being ignored...' suggests these might not have been acted upon or acknowledged further. The thread itself doesn't show rejection, but lack of follow-up could be relevant if a pattern exists.",
             "Workload/Responsibility Issues: M. Silvestre explicitly states Marketing is overloaded. S. Edwards acknowledges this but still directs D. Delacruz to provide support 'as required', potentially adding to D. Delacruz's workload without clear scope.",
@@ -430,6 +445,8 @@
       }, 
       {
         "evidence_type": "email",
+        "title_en": "Heartist Meeting Submission Apology",
+        "title_ja": "Heartistミーティングの提出遅延の謝罪",
         "evidence_file_title": "email06_2025-04-20_HeartistMeetingSubmissionApology",
         "email_thread_details": {
           "date_range": {
@@ -456,7 +473,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On Sunday, Apr 20, 2025, S. Forrester emails S. Santiago (Director of Rooms, host of Heartist meeting), copying Y. Morizono and D. Delacruz. He attaches the F&B presentation ('Heartist Communication Meeting- F&B.pptx') and explicitly apologizes for 'my teams tardiness' in meeting the submission deadline (which was Apr 18 midday, per email04). He also notes a dependency on 'Pham' for the performance music.",
+        "full_summary": "On Sunday, Apr 20, 2025, S. Forrester emails S. Santiago (Director of Rooms, host of Heartist meeting), copying Y. Morizono and D. Delacruz. He attaches the F&B presentation ('Heartist Communication Meeting- F&B.pptx') and explicitly apologizes for 'my teams tardiness' in meeting the submission deadline (which was Apr 18 midday, per email04). He also notes a dependency on 'Pham' for the performance music.",
+        "full_summary_ja": "2025年4月20日（日）17時35分、S. Forrester氏がS. Santiago氏（部屋長、Heartistミーティングの主催者）にメール（cc: Y. Morizono氏、D. Delacruz氏）。コミュニケーションミーティング用のF&Bプレゼンテーション（Heartist Communication Meeting- F&B.pptx添付）提出における「私のチームの遅延」について謝罪。パフォーマンス用の音楽は「ファム」氏の復帰が必要であると述べています。",
         "potential_indicators_of_power_harassment": [
            "Misplaced Blame/Lack of Accountability (Potential): While Forrester apologizes for 'my team's tardiness', potentially including D. Delacruz (who was assigned the task in email04), copying D. Delacruz on this apology to another Director could be interpreted as publicly highlighting the perceived failure, especially given the prior context of tight deadlines and conflicting priorities discussed in email04. The apology focuses on the team's failure rather than acknowledging the management-driven deadline issues.",
            "Vagueness: The email doesn't specify *why* the team was tardy, omitting the context of workload and priority conflicts raised by D. Delacruz in email04."
@@ -472,6 +490,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Performance Complaints and Rebuttal",
+        "title_ja": "パフォーマンスの問題と反論",
         "evidence_file_title": "email07_2025-04-24_PerformanceComplaintsAndRebuttal",
         "email_thread_details": {
           "date_range": {
@@ -531,7 +551,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "Thread starts Apr 24 with Y. Morizono asking D. Delacruz about 'Shun video' deadline. D. Delacruz replies it's delayed due to pausing work for Marcom support per prior instruction. S. Forrester responds (Apr 24), escalating complaints: claims Marcom also reported D. Delacruz left tasks incomplete, lists multiple alleged failures (Shun video, Salsa flyers/tickets, Newsletter, Audit, F&B slides), suggests overtime was needed, dismisses sick day excuse, accuses D. Delacruz of poor timeline adherence. D. Delacruz replies (Apr 25) providing detailed rebuttals for each point: disputes Marcom claim, clarifies responsibilities/reasons for delays (outlet process, late info), directly quotes Forrester's instruction to pause work ('not pressing') as reason for prioritizing Marcom over audit/newsletter, explains F&B slide conflict with priority tasks. Reiterates negative impact of work environment ('tense and demoralizing') on performance. Explicitly requests meeting with HR Director (mentioned by Forrester). Rejects accusations of non-performance and blaming sick day, citing shifting priorities and the distressing impact of responding to unchecked claims.",
+        "full_summary": "Thread starts Apr 24 with Y. Morizono asking D. Delacruz about 'Shun video' deadline. D. Delacruz replies it's delayed due to pausing work for Marcom support per prior instruction. S. Forrester responds (Apr 24), escalating complaints: claims Marcom also reported D. Delacruz left tasks incomplete, lists multiple alleged failures (Shun video, Salsa flyers/tickets, Newsletter, Audit, F&B slides), suggests overtime was needed, dismisses sick day excuse, accuses D. Delacruz of poor timeline adherence. D. Delacruz replies (Apr 25) providing detailed rebuttals for each point: disputes Marcom claim, clarifies responsibilities/reasons for delays (outlet process, late info), directly quotes Forrester's instruction to pause work ('not pressing') as reason for prioritizing Marcom over audit/newsletter, explains F&B slide conflict with priority tasks. Reiterates negative impact of work environment ('tense and demoralizing') on performance. Explicitly requests meeting with HR Director (mentioned by Forrester). Rejects accusations of non-performance and blaming sick day, citing shifting priorities and the distressing impact of responding to unchecked claims.",
+        "full_summary_ja": "2025年4月24日、Y. Morizono氏がD. Delacruz氏に「Shunビデオ」の期限について尋ねる。D. Delacruz氏は、マーケコムのサポートのために作業を一時停止する指示を受けたことに由来する遅延を説明。S. Forrester氏は（2025年4月24日）、複数の主張を高揚化：マーケコムもD. Delacruz氏のタスクを不完全と報告し、Shunビデオ、サルサナイト、ニュースレター、監査、F&Bスライドを複数の失敗として列挙。オvertimeが必要だと主張し、病欠を理由と否定。D. Delacruz氏は（2025年4月25日）、各点に対して詳細な反論を提供：マーケコムの主張を否定し、遅延の責任や理由を明確化（アウトレットの責任、遅延情報）。Forrester氏の指示（「急ぎではない作業を一時停止」）を直接引用して、マーケコム優先で監査/ニュースレターを優先する理由を説明。F&Bスライドの遅延を、火曜日の割り当て、木曜日の同日要求が優先的なマーケコムタスクと衝突したことを説明。作業環境の緊張/士気低下の影響を再確認しつつ、状況に応じた効率期待を要請。人事部長との会議の詳細を要求。職務不履行の特性付けを拒否し、優先順位/締め切りの変更に起因する広範な遅延を単一の病欠のせいにする議論に反論。未確認の仮定への対応は時間がかかり苦痛であると述べる。",
         "potential_indicators_of_power_harassment": [
             "Contradictory Instructions/Expectations: Forrester instructs D. Delacruz to pause 'not pressing' work (email02), then lists that paused work (audit, newsletter, Shun video) as failures.",
             "Shifting Blame/Ignoring Context: Forrester blames D. Delacruz for delays (F&B slides, paused tasks) while downplaying or ignoring the context provided by D. Delacruz (conflicting priorities set by Forrester, need to support Marcom, late information).",
@@ -563,6 +584,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Request to Add Team to Alchemist Calls",
+        "title_ja": "チームのアルケミストミーティングへの参加要請",
         "evidence_file_title": "email08_2024-08-14_RequestToAddTeamToAlchemistCalls",
         "email_thread_details": {
           "date_range": {
@@ -647,7 +670,8 @@
              }
           ]
         },
-        "summary_for_lawyers": "This thread from August 2024 shows S. Edwards (GM) requesting regional contact A. Tan to include D. Delacruz, M. Silvestre (Marketing Director), and J. Kannan (Revenue Director) in Accor's 'Alchemist' calls and information sharing related to F&B revenue and marketing best practices. Edwards justifies this by stating their collective involvement and the benefit of exposure for skill development. A. Tan agrees to include them, provides details for the next call (Aug 29), and shares links to resources. This demonstrates that in Aug 2024, the GM viewed D. Delacruz as a key part of the F&B revenue/marketing team worthy of inclusion in regional strategy discussions.",
+        "full_summary": "This thread from August 2024 shows S. Edwards (GM) requesting regional contact A. Tan to include D. Delacruz, M. Silvestre (Marketing Director), and J. Kannan (Revenue Director) in Accor's 'Alchemist' calls and information sharing related to F&B revenue and marketing best practices. Edwards justifies this by stating their collective involvement and the benefit of exposure for skill development. A. Tan agrees to include them, provides details for the next call (Aug 29), and shares links to resources. This demonstrates that in Aug 2024, the GM viewed D. Delacruz as a key part of the F&B revenue/marketing team worthy of inclusion in regional strategy discussions.",
+        "full_summary_ja": "2024年8月のスレッドは、S. Edwards（GM）が地域連絡先A. Tan氏に、D. Delacruz氏、M. Silvestre氏（マーケティングディレクター）、J. Kannan氏（収益ディレクター）をAccorの「アルケミスト」コールと、F&B収益とマーケティングベストプラクティスに関する情報共有に含めるよう求める。Edwards氏は、彼らの集団的な関与とスキル開発のための露出の利点を主張。A. Tan氏は同意し、次回のコール（8月29日）の詳細を提供し、リソースへのリンクを共有。これは、2024年8月、GMがD. Delacruz氏をF&B収益/マーケティングチームの重要な一部と見なり、地域戦略討論会に含める価値ある人物と見なすことを示す。",
         "potential_indicators_of_power_harassment": [
            "Historical Context/Contrast: This email showing positive inclusion and recognition of D. Delacruz's role by the GM in Aug 2024 contrasts sharply with the accusations and treatment described in the April 2025 emails (e.g., email01, email07). This contrast could support an argument that the later negative treatment was targeted or represented a significant negative shift.",
            "Demonstrates Role Recognition: Shows official recognition from the GM of D. Delacruz's involvement in F&B revenue and marketing strategy at a regional level discussion group."
@@ -667,6 +691,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Live Music Planning Request",
+        "title_ja": "ライブミュージック計画要請",
         "evidence_file_title": "email09_2024-12-10_LiveMusicPlanningRequest",
         "email_thread_details": {
           "date_range": {
@@ -692,7 +718,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "In December 2024, S. Forrester sent an email directly to Y. Morizono and D. Delacruz tasking them with exploring live music options (soloists/guitar) and explicitly requesting collaborative work on scheduling ('Lets work on a schedule together please'). This indicates direct task assignment and expectation of collaboration involving D. Delacruz on F&B entertainment planning at that time.",
+        "full_summary": "In December 2024, S. Forrester sent an email directly to Y. Morizono and D. Delacruz tasking them with exploring live music options (soloists/guitar) and explicitly requesting collaborative work on scheduling ('Lets work on a schedule together please'). This indicates direct task assignment and expectation of collaboration involving D. Delacruz on F&B entertainment planning at that time.",
+        "full_summary_ja": "2024年12月、S. Forrester氏がY. Morizono氏とD. Delacruz氏にメール。ライブミュージックのオプション（ソリスト/ギターを提案）を検討するよう依頼し、「一緒にスケジュールを考えましょう」と要請。また、「オルセン」氏（おそらくパフォーマー）と特定の夜のテーブル36での移動について話し合う必要があるとも言及。",
         "potential_indicators_of_power_harassment": [
             "Historical Context/Contrast: Similar to email08, this shows D. Delacruz being included directly by Forrester in planning and collaborative tasks in late 2024. This can be contrasted with the communication style and exclusion/criticism seen in April 2025 emails to highlight a negative shift in treatment.",
             "Demonstrates Collaborative Expectation: Shows Forrester initiating collaborative work ('Lets work on a schedule together please') involving D. Delacruz."
@@ -711,6 +738,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Request for 2025 Event Ideas",
+        "title_ja": "2025年のイベントアイデア要請",
         "evidence_file_title": "email10_2024-12-25_RequestFor2025EventIdeas",
         "email_thread_details": {
           "date_range": {
@@ -741,7 +770,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "Email from Dec 25, 2024, where S. Forrester initiates brainstorming for 2025 major events in Table 36. He emails F&B team members directly but explicitly copies D. Delacruz (F&B Marketing) and M. Silvestre (Marketing Director), asking them to come prepared with ideas for a January discussion. This shows D. Delacruz was included in strategic F&B event planning communications initiated by Forrester at the end of 2024.",
+        "full_summary": "Email from Dec 25, 2024, where S. Forrester initiates brainstorming for 2025 major events in Table 36. He emails F&B team members directly but explicitly copies D. Delacruz (F&B Marketing) and M. Silvestre (Marketing Director), asking them to come prepared with ideas for a January discussion. This shows D. Delacruz was included in strategic F&B event planning communications initiated by Forrester at the end of 2024.",
+        "full_summary_ja": "2024年12月、S. Forrester氏がF&Bチームメンバー（受信者）にメール。2025年のテーブル36での主要イベントアイデアをチームにブレインストーミングするよう依頼し、1月に議論を計画。例（イタリアンランチ、フレンチディナー、ギリシャビュッフェ、カルテットディナー）を提供し、日曜夜のビュッフェに関する質問を提起し、会場のプレミアム性と潜在的な支出に言及。アイデア出し/計画ループにD. Delacruz氏を明確に含める。",
         "potential_indicators_of_power_harassment": [
            "Historical Context/Contrast: Similar to emails 08 and 09, this December 2024 email shows D. Delacruz being included (via CC) in F&B strategic planning initiated by Forrester. This contrasts with the dynamics observed in April 2025, potentially indicating a later pattern of exclusion or changed treatment.",
            "Inclusion in Planning: Demonstrates D. Delacruz was considered relevant for F&B event ideation at this time."
@@ -759,6 +789,8 @@
       },
       {
         "evidence_type": "meeting_postponement",
+        "title_en": "David's Conduct Meeting Postponed",
+        "title_ja": "デビッドの行動ミーティング延期",
         "evidence_file_title": "email11_2025-04-11_ConductMeetingPostponed",
         "meeting_details": {
           "subject": "Davids conduct meeting [In-person]",
@@ -786,7 +818,8 @@
             "original_recipients": ["David DELACRUZ <David.DelaCruz@swissotel.com>", "Jadesofia MASIGAN <Jadesofia.Masigan@swissotel.com>"],
             "sent_date": "Friday, April 11, 2025 8:19:28 AM"
         },
-        "summary_for_lawyers": "This document shows that the 'Davids conduct meeting' scheduled by S. Forrester for Apr 11, 2025, at 11:00 AM (mandated in email01 regarding alleged insubordination) was postponed by Forrester on the morning of the meeting (8:20 AM). The stated reason was 'important matters have arisen', with an intention to reschedule the following week. Attendees were Forrester, D. Delacruz, and J. Masigan. This contradicts the initial urgency conveyed in email01.",
+        "full_summary": "This document shows that the 'Davids conduct meeting' scheduled by S. Forrester for Apr 11, 2025, at 11:00 AM (mandated in email01 regarding alleged insubordination) was postponed by Forrester on the morning of the meeting (8:20 AM). The stated reason was 'important matters have arisen', with an intention to reschedule the following week. Attendees were Forrester, D. Delacruz, and J. Masigan. This contradicts the initial urgency conveyed in email01.",
+        "full_summary_ja": "この文書は、S. Forrester氏がApr 11日午前11時（email01で告発不敬行為に関する義務会議を要求）にスケジュールされた「デビッドの行動に関する会議」を、会議の朝（8:20）にForrester氏が延期したことを示しています。延期の理由は「重要な問題が発生したため」で、翌週に再スケジュールする意図がありました。出席者はForrester氏、D. Delacruz氏、J. Masigan氏です。これは、email01で告発不敬行為に関する義務会議を要求する際に示された緊急性と矛盾します。",
         "potential_indicators_of_power_harassment": [
             "Arbitrary Schedule Changes: Postponing a mandatory 'conduct meeting' on short notice on the day it was scheduled, especially after framing it as urgent (email01), could contribute to instability and anxiety for the employee.",
             "Lack of Specificity: The reason 'important matters have arisen' is vague.",
@@ -805,6 +838,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Forwarded APAC F&B Newsletter",
+        "title_ja": "APAC F&Bニュースレター転送",
         "evidence_file_title": "email12_2024-12-19_ForwardedAPACF&BNewsletter",
         "email_thread_details": {
           "date_range": {
@@ -848,7 +883,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On Dec 30, 2024, S. Edwards (GM) forwarded the final 2024 MEA APAC F&B Newsletter (#6), originally distributed by A. Tan on Dec 19, to key members of the hotel's F&B and Marketing teams, including D. Delacruz. The forward was marked 'JFYI' (Just For Your Information), indicating D. Delacruz was kept informed of regional F&B communications at this time.",
+        "full_summary": "On Dec 30, 2024, S. Edwards (GM) forwarded the final 2024 MEA APAC F&B Newsletter (#6), originally distributed by A. Tan on Dec 19, to key members of the hotel's F&B and Marketing teams, including D. Delacruz. The forward was marked 'JFYI' (Just For Your Information), indicating D. Delacruz was kept informed of regional F&B communications at this time.",
+        "full_summary_ja": "2024年12月30日、S. Edwards氏（GM）が、A. Tan氏が2024年12月19日に配布した2024年MEA APAC F&Bニュースレター（第6号、添付）を、ホテルのF&Bおよびマーケティングチームの重要なメンバー、包括D. Delacruz氏に転送。転送は「JFYI」（参考情報）でマークされ、当時D. Delacruz氏が地域F&Bコミュニケーションを受信していることを示しています。",
         "potential_indicators_of_power_harassment": [
           "Historical Context/Contrast: Shows D. Delacruz was included in routine F&B information distribution from the GM in late December 2024. This can be contrasted with later communication patterns if exclusion or different treatment becomes evident."
         ],
@@ -863,6 +899,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Newsletter JanFeb Production",
+        "title_ja": "ニュースレター1月2月生産",
         "evidence_file_title": "email13_2024-12-16_NewsletterJanFebProduction",
         "email_thread_details": {
           "date_range": {
@@ -1015,7 +1053,8 @@
                 }
           ]
         },
-        "summary_for_lawyers": "This thread details the collaborative production of the Jan-Feb 2025 F&B newsletter. D. Delacruz initiated planning (Dec 16), gathered content/edits from Marketing (M. Silvestre, A. Ikemune, M. Simmons) through multiple rounds (Dec 17-29). S. Forrester intervened on Dec 27 demanding finalization by Dec 28 due to perceived 'last minute' timing. D. Delacruz sent the final version for printing on Dec 30 after resolving image queries. On Dec 31, *after* acknowledging it was printed, S. Forrester replied only to D. Delacruz, correcting live music information and mentioning unspecified spelling errors, stating they 'should've been picked up prior'.",
+        "full_summary": "This thread details the collaborative production of the Jan-Feb 2025 F&B newsletter. D. Delacruz initiated planning (Dec 16), gathered content/edits from Marketing (M. Silvestre, A. Ikemune, M. Simmons) through multiple rounds (Dec 17-29). S. Forrester intervened on Dec 27 demanding finalization by Dec 28 due to perceived 'last minute' timing. D. Delacruz sent the final version for printing on Dec 30 after resolving image queries. On Dec 31, *after* acknowledging it was printed, S. Forrester replied only to D. Delacruz, correcting live music information and mentioning unspecified spelling errors, stating they 'should've been picked up prior'.",
+        "full_summary_ja": "このスレッドは、2025年1月-2月号F&Bニュースレターの協力生産を説明します。D. Delacruz氏が計画を開始（12月16日）、マーケティング（M. Silvestre氏、A. Ikemune氏、M. Simmons氏）から内容/編集を複数回（12月17日-29日）通じて集めた。S. Forrester氏が12月27日に最終版を提出するよう要請し、'最後の瞬間'のタイミングを感知した。D. Delacruz氏が画像の問い合わせを解決して、12月30日に印刷に送った。12月31日、*印刷後*、S. Forrester氏がD. Delacruz氏にのみ返信し、ライブミュージックのスケジュール情報を訂正し、不明な「スペルのこと」を述べる。ニュースレターがすでに印刷されていることを認めつつも、問題点は「事前に気づくべきだった」と述べる。",
         "potential_indicators_of_power_harassment": [
             "Delayed/Post-Facto Criticism: Forrester provides corrective feedback (live music schedule, spelling) *after* the newsletter has been printed, despite having opportunity for review earlier (requested final review Dec 28 evening) and being part of the email chain.",
             "Undermining/Blame: Stating errors 'should've been picked up prior' after the fact, especially when directed solely at D. Delacruz who coordinated input from multiple stakeholders including Forrester's direct reports, can be seen as placing undue blame and undermining the collaborative effort.",
@@ -1034,6 +1073,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Request for Workload Info and Calendar Sharing",
+        "title_ja": "作業負担情報とカレンダー共有の要請",
         "evidence_file_title": "email14_2025-01-17_RequestForWorkloadInfoAndCalendarSharing",
         "email_thread_details": {
           "date_range": {
@@ -1127,7 +1168,8 @@
               }
           ]
         },
-        "summary_for_lawyers": "This thread, spanning Jan 17 to Feb 7, 2025, documents increasing scrutiny of D. Delacruz's workload by management (S. Edwards, then S. Forrester). Initial requests (Jan 17, 20) from Edwards for workload summary, calendar sharing, audit completion, meeting summaries, and newsletter prep appear standard. Forrester follows up aggressively (Feb 6), demanding the project list 'to understand workload and timelines', confirming newsletter draft 'due today', and repeating calendar request. After D. Delacruz provides a list (Feb 6), Forrester replies (Feb 7) with intensive, itemized questioning that appears to minimize D. Delacruz's stated tasks (e.g., questioning work needed for ongoing/unconfirmed events, gallery possibility, design needs, menu uploads) and demands specifics on event leads, framing it as understanding 'pressure points'. D. Delacruz responds (Feb 7) with detailed justifications for each workload item and clarification on leads.",
+        "full_summary": "This thread, spanning Jan 17 to Feb 7, 2025, documents increasing scrutiny of D. Delacruz's workload by management (S. Edwards, then S. Forrester). Initial requests (Jan 17, 20) from Edwards for workload summary, calendar sharing, audit completion, meeting summaries, and newsletter prep appear standard. Forrester follows up aggressively (Feb 6), demanding the project list 'to understand workload and timelines', confirming newsletter draft 'due today', and repeating calendar request. After D. Delacruz provides a list (Feb 6), Forrester replies (Feb 7) with intensive, itemized questioning that appears to minimize D. Delacruz's stated tasks (e.g., questioning work needed for ongoing/unconfirmed events, gallery possibility, design needs, menu uploads) and demands specifics on event leads, framing it as understanding 'pressure points'. D. Delacruz responds (Feb 7) with detailed justifications for each workload item and clarification on leads.",
+        "full_summary_ja": "2025年1月17日から2月7日までのこのスレッドは、管理（S. Edwards、その後S. Forrester）によるD. Delacruz氏の作業負荷の増加の監査を文書化します。Edwards（2025年1月17日、20）から作業負荷要約、カレンダー共有、審査完了、ミーティング要約、ニュースレター準備の初期要求は標準的。Forresterは積極的に（2月6日）プロジェクトリストを「作業負荷とタイムラインを理解する」ために要求し、ニュースレタードラフト「今日」に確認し、カレンダー要求を繰り返します。D. Delacruz氏がリストを提供（2月6日）後、Forrester氏は（2月7日）詳細で項目別に質問を繰り返し、D. Delacruz氏の明確な作業項目を最小限に疑問に問うように見なされる（例えば、進行中の/未確認のイベント、ギャラリー、デザイン、メニューアップロードが必要な作業）と、イベントリードの具体的な要件を要求し、それを「プレッシャーポイント」を理解するという姿勢としています。D. Delacruz氏は（2月7日）各作業項目の詳細な説明とリードの明確化で応答します。",
         "potential_indicators_of_power_harassment": [
             "Excessive Monitoring/Micromanagement: Repeated requests for detailed project lists, workload justification, timelines, and calendar access, culminating in Forrester's itemized interrogation of D. Delacruz's provided list.",
             "Downplaying/Discrediting Work: Forrester's questions seem designed to minimize the effort or necessity of tasks listed by D. Delacruz (e.g., suggesting ongoing events only need flyers, gallery project is just waiting, questioning design workload).",
@@ -1160,6 +1202,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Shift Schedule and Overtime Discussion",
+        "title_ja": "シフトスケジュールとオvertimeの議論",
         "evidence_file_title": "email15_2025-01-29_ShiftScheduleAndOvertimeDiscussion",
         "email_thread_details": {
           "date_range": {
@@ -1331,7 +1375,8 @@
                  }
           ]
         },
-        "summary_for_lawyers": "This thread documents conflict over scheduling and overtime for event support in Feb 2025. After schedule changes managed by GM S. Edwards (Jan 29-Feb 4), D. Delacruz requests (Feb 12) to work later shifts on Feb 15 & 21 (event days) to provide support, citing past issues. S. Forrester, now managing schedule, responds (Feb 12) that late finishes are 'included overtime' and D. Delacruz must 'stay until the job is complete.' D. Delacruz pushes back (Feb 13), preferring shift adjustments over 'pre-planned extended working hours' for balance/productivity. Forrester rejects this (Feb 14), mandates D. Delacruz 'stay back' on event nights until released by A. Yorifuji, keeping the 9:00-17:30 roster. D. Delacruz points out the impracticality (shift ends hours before event starts) and states he will adhere to rostered hours since adjustments aren't offered (Feb 14). Forrester dismisses this, reiterating staying back is required (Feb 14). D. Delacruz again highlights the extended nature of event work past 20:30 and asks Forrester to specify the responsibility mandating 'pre-planned overtime' instead of adjusted shifts (Feb 14).",
+        "full_summary": "This thread documents conflict over scheduling and overtime for event support in Feb 2025. After schedule changes managed by GM S. Edwards (Jan 29-Feb 4), D. Delacruz requests (Feb 12) to work later shifts on Feb 15 & 21 (event days) to provide support, citing past issues. S. Forrester, now managing schedule, responds (Feb 12) that late finishes are 'included overtime' and D. Delacruz must 'stay until the job is complete.' D. Delacruz pushes back (Feb 13), preferring shift adjustments over 'pre-planned extended working hours' for balance/productivity. Forrester rejects this (Feb 14), mandates D. Delacruz 'stay back' on event nights until released by A. Yorifuji, keeping the 9:00-17:30 roster. D. Delacruz points out the impracticality (shift ends hours before event starts) and states he will adhere to rostered hours since adjustments aren't offered (Feb 14). Forrester dismisses this, reiterating staying back is required (Feb 14). D. Delacruz again highlights the extended nature of event work past 20:30 and asks Forrester to specify the responsibility mandating 'pre-planned overtime' instead of adjusted shifts (Feb 14).",
+        "full_summary_ja": "2025年2月のイベントサポートのスケジュールと残業に関する紛争を文書化します。GM S. Edwards（1月29日-2月4日）によって管理されたスケジュールの変更後、D. Delacruz（2月12日）は2月15日と21日（イベント日）に後方シフトを提供するために後方シフトを提供するよう依頼し、過去の問題を引用します。S. Forrester（2月12日）は、遅延は「含まれる残業」であり、D. Delacruzは「仕事が完了するまで残り続ける」必要があります。D. Delacruzは（2月13日）バランス/生産性を考慮して「事前に計画された延長勤務時間」を代わりに「シフト調整」を好む。Forresterはこれを拒否（2月14日）し、D. Delacruzは「後方シフト」をイベントの夜に保持し、A. Yorifujiが解放するまで、9:00-17:30のスケジュールを維持する。D. Delacruzは（2月14日）シフトがイベント開始時間よりも早終するという不合理性を指摘し、調整が提供されていないため、スケジュールを遵守するつもりを表明。Forresterはこれを否定（2月14日）し、後方シフトが必要であると再確認。D. Delacruzは（2月14日）イベント作業の延長性を強調し、Forresterに「事前に計画された残業」を義務付ける特定の責任を明確化を求める。",
         "potential_indicators_of_power_harassment": [
            "Refusal to Accommodate Reasonable Request: Rejecting D. Delacruz's request for a shift adjustment (proven past practice) to cover evening events, instead mandating regular hours plus potentially long, open-ended overtime.",
            "Imposing Unreasonable Working Conditions: Requiring an employee to work a full day shift (9:00-17:30) and then stay indefinitely ('until the job is complete' / 'until Atsuko no longer requires you') for evening events starting at 20:30, creating excessively long workdays.",
@@ -1359,6 +1404,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Performance Review Request and Deadline Issue",
+        "title_ja": "パフォーマンスレビュー要請と期限問題",
         "evidence_file_title": "email16_2025-01-11_PerformanceReviewRequestAndDeadlineIssue",
         "email_thread_details": {
           "date_range": {
@@ -1408,7 +1455,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This thread concerns D. Delacruz's 2024 performance review. S. Forrester initiated the process on Jan 11, 2025, requesting D. Delacruz complete his part by 'end of January'. Forrester followed up on Feb 7 (after the initial deadline), asking why there was no response and setting a new overall completion deadline of Feb 15, demanding D. Delacruz's input by 'COB Saturday' for review. On the Feb 15 deadline itself, Forrester sent another email demanding the form be returned to T&C (HR) that day and asking D. Delacruz to explain 'why you have failed to follow a direct instruction'.",
+        "full_summary": "This thread concerns D. Delacruz's 2024 performance review. S. Forrester initiated the process on Jan 11, 2025, requesting D. Delacruz complete his part by 'end of January'. Forrester followed up on Feb 7 (after the initial deadline), asking why there was no response and setting a new overall completion deadline of Feb 15, demanding D. Delacruz's input by 'COB Saturday' for review. On the Feb 15 deadline itself, Forrester sent another email demanding the form be returned to T&C (HR) that day and asking D. Delacruz to explain 'why you have failed to follow a direct instruction'.",
+        "full_summary_ja": "2025年2月のイベントサポートのスケジュールと残業に関する紛争を文書化します。GM S. Edwards（1月29日-2月4日）によって管理されたスケジュールの変更後、D. Delacruz（2月12日）は2月15日と21日（イベント日）に後方シフトを提供するために後方シフトを提供するよう依頼し、過去の問題を引用します。S. Forrester（2月12日）は、遅延は「含まれる残業」であり、D. Delacruzは「仕事が完了するまで残り続ける」必要があります。D. Delacruzは（2月13日）バランス/生産性を考慮して「事前に計画された延長勤務時間」を代わりに「シフト調整」を好む。Forresterはこれを拒否（2月14日）し、D. Delacruzは「後方シフト」をイベントの夜に保持し、A. Yorifujiが解放するまで、9:00-17:30のスケジュールを維持する。D. Delacruzは（2月14日）シフトがイベント開始時間よりも早終するという不合理性を指摘し、調整が提供されていないため、スケジュールを遵守するつもりを表明。Forresterはこれを否定（2月14日）し、後方シフトが必要であると再確認。D. Delacruzは（2月14日）イベント作業の延長性を強調し、Forresterに「事前に計画された残業」を義務付ける特定の責任を明確化を求める。",
         "potential_indicators_of_power_harassment": [
             "Accusatory Tone/Framing Failure: Forrester frames the non-submission by the deadline (Feb 15) as a failure 'to follow a direct instruction' and demands an explanation, rather than inquiring about potential issues or workload conflicts.",
             "Escalation/Pressure: The tone shifts from a request (Jan 11) to a follow-up question (Feb 7) to a direct accusation and demand for explanation on the deadline day (Feb 15), increasing pressure.",
@@ -1430,6 +1478,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Latin Party Feedback and Rejection",
+        "title_ja": "ラテンパーティーのフィードバックと拒否",
         "evidence_file_title": "email17_2025-02-15_LatinPartyFeedbackAndRejection",
         "email_thread_details": {
           "date_range": {
@@ -1481,7 +1531,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This thread concerns planning for the Latin Party event. A. Yorifuji (Level 10 Mgr) summarizes requests from the organizer (Marcelo) after a meeting, including operational suggestions (staff drinks/snacks, extended hours, specific food) and seems supportive (Feb 15, 3:02 PM). S. Forrester replies shortly after (3:16 PM), rejecting or negatively questioning nearly all points (e.g., refusing costs for organizer's staff, questioning benefit of longer hours, rejecting specific menu). D. Delacruz then replies (4:41 PM) attempting to explain the organizer's rationale for each request (e.g., staff increase due to guest numbers, food idea based on trends, price concerns related to future hikes), essentially mediating or advocating for the organizer's points against Forrester's dismissive stance.",
+        "full_summary": "This thread concerns planning for the Latin Party event. A. Yorifuji (Level 10 Mgr) summarizes requests from the organizer (Marcelo) after a meeting, including operational suggestions (staff drinks/snacks, extended hours, specific food) and seems supportive (Feb 15, 3:02 PM). S. Forrester replies shortly after (3:16 PM), rejecting or negatively questioning nearly all points (e.g., refusing costs for organizer's staff, questioning benefit of longer hours, rejecting specific menu). D. Delacruz then replies (4:41 PM) attempting to explain the organizer's rationale for each request (e.g., staff increase due to guest numbers, food idea based on trends, price concerns related to future hikes), essentially mediating or advocating for the organizer's points against Forrester's dismissive stance.",
+        "full_summary_ja": "このスレッドは、ラテンパーティーの計画に関するものです。A. Yorifuji（レベル10マネージャー）は、会議後、主催者の（マルセロ）からの要件を要約し、操作的提案（スタッフドリンク/スナック、延長時間、特定の食事）を含み、サポートしているようです（2月15日、15:02）。S. Forresterはその後すぐに返信し、ほぼすべてのポイントを拒否または疑問視（例えば、主催者のスタッフの費用を拒否、延長時間のメリットを疑問視、特定のメニューを拒否）します。D. Delacruzはその後（15:41）主催者の各要件の論理を説明しようと試み、主催者の立場を主張または主張するための仲介者または主張者を主張します。",
         "potential_indicators_of_power_harassment": [
           "Dismissal of Suggestions/Input: Forrester quickly rejects or questions suggestions seemingly supported by the operational manager (Yorifuji) and contextualized by D. Delacruz, potentially shutting down attempts at event improvement or organizer collaboration.",
           "Negative/Unconstructive Feedback: Forrester's responses are largely negative ('why should it cost us more?', 'why would we extend?', 'We are not a Spanish restaurant', 'Nobody likes inflation') without offering constructive alternatives or engaging with the rationale provided.",
@@ -1503,6 +1554,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Disciplinary Notice Phone Issue",
+        "title_ja": "懲戒通知電話問題",
         "evidence_file_title": "email18_2025-02-17_DisciplinaryNoticePhoneIssue",
         "email_thread_details": {
           "date_range": {
@@ -1585,7 +1638,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This thread concerns a disciplinary action related to a company mobile phone (subject line indicates initial issue was about returning it). On Feb 17, J. Masigan (HR) notes D. Delacruz hasn't returned 'the document'. V. Tan (Finance) emails D. Delacruz urging him to discuss concerns with HR before signing, setting an end-of-week deadline. On Feb 25, Tan sends a 'final reminder', setting Feb 28 deadline for discussion or signing, warning inaction implies agreement. D. Delacruz replies Feb 28 asking to meet HR/Finance to clarify the form. After D. Delacruz's leave (Feb 28-Mar 5), J. Masigan emails Mar 4 stating the 'sanction' was reduced to a Verbal Warning and asks him to sign the attached revised 'Disciplinary Notice form' by Mar 5. D. Delacruz replies Mar 6 asking how to proceed with signing the updated form.",
+        "full_summary": "This thread concerns a disciplinary action related to a company mobile phone (subject line indicates initial issue was about returning it). On Feb 17, J. Masigan (HR) notes D. Delacruz hasn't returned 'the document'. V. Tan (Finance) emails D. Delacruz urging him to discuss concerns with HR before signing, setting an end-of-week deadline. On Feb 25, Tan sends a 'final reminder', setting Feb 28 deadline for discussion or signing, warning inaction implies agreement. D. Delacruz replies Feb 28 asking to meet HR/Finance to clarify the form. After D. Delacruz's leave (Feb 28-Mar 5), J. Masigan emails Mar 4 stating the 'sanction' was reduced to a Verbal Warning and asks him to sign the attached revised 'Disciplinary Notice form' by Mar 5. D. Delacruz replies Mar 6 asking how to proceed with signing the updated form.",
+        "full_summary_ja": "このスレッドは、会社の携帯電話に関する懲戒行動に関するものです。2月17日、J. Masigan（人事部長）は、D. Delacruzが「その文書」を返還していないことを報告します。V. Tan（財務部長）は、D. Delacruzに、懲戒文書を署名する前に人事部と話し合うことを勧め、週末までに議論または署名する期限を設けます。2月25日、Tanは「最終的なリマインダー」を送り、2月28日までに議論または署名する期限を設け、無作為な行動は同意を意味する可能性があることを警告します。2月28日、Delacruzは、人事部/財務部と面談して文書を明確にするよう依頼します。D. Delacruzの休暇（2月28日-3月5日）後、J. Masiganは3月4日、'処分'が口頭警告に軽減されたと述べ、3月5日までに添付の更新版「懲戒通知フォーム」を署名するよう依頼します。D. Delacruzは3月6日、更新版の文書を署名する方法を尋ねます。",
         "potential_indicators_of_power_harassment": [
            "Pressure Tactics: Setting short deadlines ('end of this week', Feb 28th) for discussing or signing a disciplinary document, coupled with warnings that inaction implies agreement ('silent confirmation').",
            "Lack of Clarity/Due Process (Initial Phase): D. Delacruz needing to request clarification on the form suggests the initial process or the document itself may have been unclear.",
@@ -1607,6 +1661,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Investigation Finding and Review Process",
+        "title_ja": "調査結果とレビュープロセス",
         "evidence_file_title": "email19_2025-02-07_InvestigationFindingAndReviewProcess",
         "email_thread_details": {
           "date_range": {
@@ -1657,7 +1713,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This thread follows D. Delacruz raising concerns about his performance review process with GM S. Edwards on Feb 7, citing the 'current situation' (presumably conflict with S. Forrester) and unclear goals set by Forrester. On Feb 18, Edwards responds, stating unspecified 'investigations' found 'no misconduct outside of normal leadership with Steve'. Consequently, Edwards directs D. Delacruz's reporting line to resume under Forrester and instructs D. Delacruz to proceed with the self-assessment for the review, to be finalized with Forrester. Edwards justifies the pre-set goals as standard F&B/hotel objectives.",
+        "full_summary": "This thread follows D. Delacruz raising concerns about his performance review process with GM S. Edwards on Feb 7, citing the 'current situation' (presumably conflict with S. Forrester) and unclear goals set by Forrester. On Feb 18, Edwards responds, stating unspecified 'investigations' found 'no misconduct outside of normal leadership with Steve'. Consequently, Edwards directs D. Delacruz's reporting line to resume under Forrester and instructs D. Delacruz to proceed with the self-assessment for the review, to be finalized with Forrester. Edwards justifies the pre-set goals as standard F&B/hotel objectives.",
+        "full_summary_ja": "このスレッドは、D. Delacruz氏が2月7日にGM S. Edwards氏とパフォーマンスレビューのプロセスについて懸念を提起し、'現在の状況'（おそらくS. Forresterとの衝突）を指し、Forresterによって設定された不明確な目標を指摘する。2月18日、Edwardsは、未明確な「調査」の結果、「スティーブとの通常のリーダーシップ以外の不正行為はなかった」と述べ、D. Delacruz氏の報告ラインをForresterに再開させ、D. Delacruz氏にレビューの自評価を完了して、その後Forresterと最終決定するよう指示する。Edwardsは、事前設定された目標をF&Bチームの影響範囲とホテル全体の目標に関連すると説明する。",
         "potential_indicators_of_power_harassment": [
            "Dismissal of Concerns ('Normal Leadership'): Characterizing the situation as 'normal leadership' despite D. Delacruz having implicitly raised concerns ('current situation') and documented specific issues (e.g., email14, email15). This finding dismisses the employee's perspective.",
            "Reinstating Problematic Reporting Line: Forcing the employee back under the direct supervision of the manager with whom conflicts have been documented, immediately after stating an investigation found no issue with that manager's 'leadership'.",
@@ -1679,6 +1736,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Payment Request Clarification",
+        "title_ja": "支払い要件の明確化",
         "evidence_file_title": "email20_2025-02-25_PaymentRequestClarification",
         "email_thread_details": {
           "date_range": {
@@ -1749,7 +1808,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This thread involves S. Forrester resolving a payment issue for transport costs with an external contact ('Miku'/Kiki Green), blaming internal miscommunication. On Feb 25, Forrester forwards the confirmation and bank details to D. Delacruz, instructing him 'Please see finance and arrange payment'. D. Delacruz replies (Feb 26) asking for necessary details (finance contact, forms needed, past payment history, budget code). Forrester responds curtly, confirming Finance dept but deflecting the procedural questions by asking D. Delacruz how he handled such payments previously, and stating it's a marketing expense. This interaction shows Forrester delegating an administrative task (payment arrangement) but failing to provide necessary information when asked, instead questioning the employee's past actions.",
+        "full_summary": "This thread involves S. Forrester resolving a payment issue for transport costs with an external contact ('Miku'/Kiki Green), blaming internal miscommunication. On Feb 25, Forrester forwards the confirmation and bank details to D. Delacruz, instructing him 'Please see finance and arrange payment'. D. Delacruz replies (Feb 26) asking for necessary details (finance contact, forms needed, past payment history, budget code). Forrester responds curtly, confirming Finance dept but deflecting the procedural questions by asking D. Delacruz how he handled such payments previously, and stating it's a marketing expense. This interaction shows Forrester delegating an administrative task (payment arrangement) but failing to provide necessary information when asked, instead questioning the employee's past actions.",
+        "full_summary_ja": "このスレッドは、内部の誤解を指摘して、外部連絡先（'Miku'/キキ・グリーン）の交通費の支払い問題を解決するS. Forrester氏がいます。2月25日、Forresterは確認と銀行詳細をD. Delacruz氏に転送し、'経理部と支払いを整備してください'と指示します。2月26日、Delacruzは必要な詳細（経理部連絡先、必要なフォーム、過去の支払い履歴、予算コード）を尋ねます。Forresterは、過去の支払い方法について尋ね、経理部門を確認する軽蔑の返信で、手続き上の質問を回避します。費用は「マーケティング費用」だと述べる。このやり取りは、Forresterが管理タスク（支払いの整備）を委任するが、質問に回答する際に必要な情報提供を拒否し、従業員の過去の行動を問いかけていることを示します。",
         "potential_indicators_of_power_harassment": [
           "Delegation without Information/Support: Assigning a task ('arrange payment') but not providing the necessary information (contact person, process details) when requested.",
           "Deflecting Questions/Shifting Responsibility: Instead of answering D. Delacruz's valid questions about process, Forrester deflects by asking D. Delacruz about past procedures, putting the onus back on the employee.",
@@ -1769,6 +1829,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Expectations and Medical Certificate",
+        "title_ja": "期待と医療証明書",
         "evidence_file_title": "email21_2025-02-27_ExpectationsAndMedicalCertificate",
         "email_thread_details": {
           "date_range": {
@@ -1873,7 +1935,8 @@
                }
           ]
         },
-        "summary_for_lawyers": "This lengthy thread (Feb 27-Mar 30) documents S. Forrester imposing strict new work expectations on D. Delacruz, focusing heavily on timekeeping and control. Forrester mandates specific rules (event signage, attire, audit reporting, weekly plans, Feb 27). D. Delacruz seeks clarification on several points (Feb 28). Forrester reiterates demands (Mar 1), specifically imposing a mandatory 12-1pm lunch break and demanding clocking adherence. Forrester then issues a formal warning via email (Mar 15) for D. Delacruz allegedly failing to follow break instructions, citing timecard data and disciplinary matrix terms ('Deserting work station'). D. Delacruz pushes back (Mar 17), questioning the fixed break policy's consistency and raising a medical need (blood sugar) requiring flexible eating times. Forrester dismisses this (Mar 17), demands medical proof, insists D. Delacruz must ask permission (not just inform) for break deviations, and schedules a meeting. D. Delacruz agrees to provide certificate (Mar 18), asks for policy/procedure, and questions the permission requirement again. After D. Delacruz submits certificate (Mar 27), Forrester acknowledges it (Mar 28), uses it to justify the 1pm break time, and instructs submission of original to HR (Mar 30).",
+        "full_summary": "This lengthy thread (Feb 27-Mar 30) documents S. Forrester imposing strict new work expectations on D. Delacruz, focusing heavily on timekeeping and control. Forrester mandates specific rules (event signage, attire, audit reporting, weekly plans, Feb 27). D. Delacruz seeks clarification on several points (Feb 28). Forrester reiterates demands (Mar 1), specifically imposing a mandatory 12-1pm lunch break and demanding clocking adherence. Forrester then issues a formal warning via email (Mar 15) for D. Delacruz allegedly failing to follow break instructions, citing timecard data and disciplinary matrix terms ('Deserting work station'). D. Delacruz pushes back (Mar 17), questioning the fixed break policy's consistency and raising a medical need (blood sugar) requiring flexible eating times. Forrester dismisses this (Mar 17), demands medical proof, insists D. Delacruz must ask permission (not just inform) for break deviations, and schedules a meeting. D. Delacruz agrees to provide certificate (Mar 18), asks for policy/procedure, and questions the permission requirement again. After D. Delacruz submits certificate (Mar 27), Forrester acknowledges it (Mar 28), uses it to justify the 1pm break time, and instructs submission of original to HR (Mar 30).",
+        "full_summary_ja": "この長いスレッド（2月27日-3月30日）は、S. Forrester氏がD. Delacruz氏に厳格な新しい仕事期待を課し、時間管理と制御に重く注ぐことを文書化します。Forresterは特定のルールを課します（イベントサイン、服装、監査レポート、週間プラン、2月27日）。D. Delacruzはいくつかの点を明確化を求めます（2月28日）。Forresterは（3月1日）再び要求を強調し、特に12時から13時までの必須昼休憩を課し、時計打刻の遵守を要求します。その後、D. Delacruzが休憩指示を遵守していないと主張するため、（3月15日）正式な警告をメールで発表します。時間カードデータと懲戒マトリクスの用語（「休憩を離れる」）を引用します。D. Delacruzは（3月17日）休憩ポリシーの一貫性を質問し、血液糖分の医療要件を提起し、柔軟な食事時間が必要です。Forresterはこれを否定し、医療証明書を要求し、D. Delacruzが休憩の変更を許可する必要があります（ではなく、通知する必要があります）と主張し、面談をスケジュールします。D. Delacruzは（3月18日）証明書を提供する約束をし、ポリシー/手順を要求し、許可要件を再び質問します。D. Delacruzが証明書を提出（3月27日）後、Forresterは（3月28日）それを認め、それを13時休憩時間の正当化に使用し、元の書類を人事に提出するよう指示します（3月30日）。",
         "potential_indicators_of_power_harassment": [
            "Imposing Arbitrary/Inflexible Rules: Mandating a strict 12-1pm lunch break without apparent operational need, especially after employee raises medical concerns requiring flexibility.",
            "Micromanagement/Excessive Scrutiny: Detailed monitoring of break times (citing timecard data), mandatory weekly work plans, specific attire requirements, rigid clocking rules.",
@@ -1904,6 +1967,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Staff Dining Policy Reminder",
+        "title_ja": "スタッフダイニングポリシーの再確認",
         "evidence_file_title": "email22_2025-01-01_StaffDiningPolicyReminder",
         "email_thread_details": {
           "date_range": {
@@ -1939,7 +2004,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On Jan 1, 2025, S. Forrester emailed F&B Managers regarding staff dining policy. He stated approval is required, cited two unapproved diners from NYE (while claiming he denied others), and warned of consequences for future breaches. He followed up immediately adding a rule banning terminated employees from the premises for 6 months. The user's file name suggests they were one of the diners mentioned and had prior approval, which would contradict Forrester's statement and framing.",
+        "full_summary": "On Jan 1, 2025, S. Forrester emailed F&B Managers regarding staff dining policy. He stated approval is required, cited two unapproved diners from NYE (while claiming he denied others), and warned of consequences for future breaches. He followed up immediately adding a rule banning terminated employees from the premises for 6 months. The user's file name suggests they were one of the diners mentioned and had prior approval, which would contradict Forrester's statement and framing.",
+        "full_summary_ja": "2025年1月1日、S. Forrester氏はF&Bマネージャー配布リストにメール。スタッフダイニングポリシーについて。承認が必要であると述べ、NYE（大晦日）の2名の「アンバサダー」が承認なしで食事していたと主張（他のリクエストを拒否していたと主張）。将来の違反に対する懲罰を警告。その後、退職後6ヶ月間敷地内への立ち入りが禁止されるルールを追加。ユーザーのファイル名は、彼らが述べた2名の「アンバサダー」の一人であり、事前に承認を受けたことを示唆しており、これがForresterの主張とフレーミングを矛盾させます。",
         "potential_indicators_of_power_harassment": [
            "Misrepresentation/False Accusation (Potential - based on filename): If the user indeed had approval, Forrester's email misrepresents the situation by claiming the dining was unapproved, potentially targeting the individuals involved.",
            "Inconsistent Application of Rules (Potential): Claiming he denied other requests due to NYE impact while allegedly approved individuals dined raises questions about fairness or targeting.",
@@ -1961,6 +2027,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Initial Complaint and GM Response",
+        "title_ja": "初の申告とGMの回答",
         "evidence_file_title": "email23_2025-01-11_InitialComplaintAndGMResponse",
         "email_thread_details": {
           "date_range": {
@@ -2064,7 +2132,8 @@
               }
           ]
         },
-        "summary_for_lawyers": "This thread documents D. Delacruz's formal complaint (Jan 11) to GM S. Edwards regarding S. Forrester's conduct (negative comments to colleagues, perceived job threat 'find another job') and its impact (stress, health, difficulty communicating). He requests confidentiality from Forrester initially. Edwards responds (Jan 13), acknowledging Steve as the manager, assuring no recourse from discussing with Steve. Edwards frames Steve's alleged micromanagement as a response to perceived performance issues (punctuality, deadlines, work/socializing boundaries) causing leadership 'frustration'. Edwards offers to discuss further and take up threats if substantiated. D. Delacruz replies (Jan 13), reiterating concerns exceed minor issues, mentioning specific false statement attributed to Steve, colleagues' fear of repercussions, Steve's aggressive confrontation over a schedule change, and the Jan 11 job threat. Edwards suggests (Jan 14) face-to-face meeting. After meeting (Jan 15), Edwards asks D. Delacruz for a formal documented complaint and confirms speaking to Steve next day. D. Delacruz replies (Jan 15) re-stating anonymity concerns and suggesting third-party mediation. Edwards responds (Jan 16) assuring against repercussions, encouraging colleagues forward, but pivoting to imposing 'structure' on D. Delacruz's schedule, taking over rostering short-term, requesting calendar access, and requesting attendance records.",
+        "full_summary": "This thread documents D. Delacruz's formal complaint (Jan 11) to GM S. Edwards regarding S. Forrester's conduct (negative comments to colleagues, perceived job threat 'find another job') and its impact (stress, health, difficulty communicating). He requests confidentiality from Forrester initially. Edwards responds (Jan 13), acknowledging Steve as the manager, assuring no recourse from discussing with Steve. Edwards frames Steve's alleged micromanagement as a response to perceived performance issues (punctuality, deadlines, work/socializing boundaries) causing leadership 'frustration'. Edwards offers to discuss further and take up threats if substantiated. D. Delacruz replies (Jan 13), reiterating concerns exceed minor issues, mentioning specific false statement attributed to Steve, colleagues' fear of repercussions, Steve's aggressive confrontation over a schedule change, and the Jan 11 job threat. Edwards suggests (Jan 14) face-to-face meeting. After meeting (Jan 15), Edwards asks D. Delacruz for a formal documented complaint and confirms speaking to Steve next day. D. Delacruz replies (Jan 15) re-stating anonymity concerns and suggesting third-party mediation. Edwards responds (Jan 16) assuring against repercussions, encouraging colleagues forward, but pivoting to imposing 'structure' on D. Delacruz's schedule, taking over rostering short-term, requesting calendar access, and requesting attendance records.",
+        "full_summary_ja": "D. Delacruz氏がS. Edwards氏に正式な控訴（2025年1月11日）を記録。S. Forrester氏の行動（同僚に否定的なコメント、職場環境への懸念提起「別の仕事を見つける」）とその影響（ストレス、健康、コミュニケーションの困難）に関する控訴を記録。彼はForrester氏から最初に匿名性を要求。Edwards氏は（1月13日）Steve氏を上司として認め、Steve氏と話し合うことから後続の措辞を保証。Edwards氏はSteve氏の疑似微管理を、彼の行動（遅刻、期限切れ、業務/社会活動境界線）による领导者の「ストレス」の結果として説明。Edwards氏はさらに話し合いを提案し、証拠があれば脅威を採用。D. Delacruz氏は（1月13日）懸念が微小な問題を上回るという再確認、Steve氏の疑似誤解を atributing、同僚の懸念提起に対する懸念、Steve氏がスケジュール変更に関する激しい対話を提起、1月11日の職場環境への懸念提起を提起。Edwards氏は（1月14日）面談を提案。面談後（1月15日）、Edwards氏はD. Delacruz氏に正式な控訴書を提出し、Steve氏と話し合うことを確認。D. Delacruz氏は（1月15日）匿名性懸念の再確認、第三者調停を提案。Edwards氏は（1月16日）後続の措辞を保証、同僚を奨励し、短期的にはD. Delacruz氏のスケジュールを短期的に管理、勤務表作成を短期的に引き受ける、カレンダーアクセスを要求、勤務記録を要求。",
         "potential_indicators_of_power_harassment": [
             "Threatening Language: Forrester allegedly stating 'if you do not, you need to find another job' and implying job risk based on performance.",
             "Aggressive Communication: D. Delacruz alleges Forrester approached him 'in a confrontational and aggressive manner, yelling'.",
@@ -2097,6 +2166,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Investigation Meeting Scheduling",
+        "title_ja": "調査会議のスケジューリング",
         "evidence_file_title": "email24_2025-01-16_InvestigationMeetingScheduling",
         "email_thread_details": {
           "date_range": {
@@ -2168,7 +2239,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This thread details the scheduling and clarification process for an 'investigation meeting' following D. Delacruz's complaint (email23). J. Masigan (HR) schedules the meeting for Jan 20 (initially venue TBA, later confirmed as GM's office), states it's an investigative step (not disciplinary), informs D. Delacruz of right to bring representative, and confirms attendees (herself, S. Edwards, note taker) and format (Q&A, evidence review). Masigan initially insists evidence be submitted *during* the meeting. D. Delacruz reiterates (Jan 19) that gathering sensitive evidence (re: false statements, staff comms) takes time and asks again if he can raise concerns at the meeting even if documentation follows later. The final response from HR on this specific point is not included in this file.",
+        "full_summary": "This thread details the scheduling and clarification process for an 'investigation meeting' following D. Delacruz's complaint (email23). J. Masigan (HR) schedules the meeting for Jan 20 (initially venue TBA, later confirmed as GM's office), states it's an investigative step (not disciplinary), informs D. Delacruz of right to bring representative, and confirms attendees (herself, S. Edwards, note taker) and format (Q&A, evidence review). Masigan initially insists evidence be submitted *during* the meeting. D. Delacruz reiterates (Jan 19) that gathering sensitive evidence (re: false statements, staff comms) takes time and asks again if he can raise concerns at the meeting even if documentation follows later. The final response from HR on this specific point is not included in this file.",
+        "full_summary_ja": "D. Delacruz氏が会議形式/出席者に関する明確化を認識。証拠収集（特に虚偽陳述/スタッフコミュニケーション）は機密性が高く時間がかかると繰り返し述べ、相談を開始し文書化を「来週末までに」正式化する予定だと説明。証拠が後日提出される場合でも会議で懸念を話し合えるか、それとも証拠が完全に準備できるまで待つべきか再度質問し、即時の文書化なしでも詳細が記録されることを望む。",
         "potential_indicators_of_power_harassment": [
             "Procedural Pressure: Insisting evidence, which the employee states is sensitive and requires time to gather properly (consultations needed), must be submitted *during* the initial meeting could rush the employee and potentially weaken their ability to present a full case.",
             "Lack of Flexibility: Initial inflexibility regarding evidence submission timeline, despite the employee explaining the sensitive nature and ongoing consultation process.",
@@ -2191,6 +2263,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Attendance Record Request and Followup",
+        "title_ja": "勤務日記の要件とフォロー",
         "evidence_file_title": "email25_2025-01-16_AttendanceRecordRequestAndFollowup",
         "email_thread_details": {
           "date_range": {
@@ -2261,7 +2335,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On Jan 16, 2025, concurrently with scheduling the investigation meeting (email24) and taking over scheduling (email23/email26), S. Edwards (GM) requested D. Delacruz's January attendance records from A. Shimizu (Payroll/HR?)[cite: 205]. Edwards also instructed Shimizu to ensure D. Delacruz's time was recorded in the standard OT report for monitoring[cite: 207]. After receiving the timesheet[cite: 200, 201], Edwards questioned D. Delacruz about a missing clock-in time for Jan 12[cite: 193]. D. Delacruz explained he arrived around noon for an event but wasn't sure why it wasn't recorded[cite: 186, 187]. Edwards acknowledged this and stated Shimizu would 'keep an eye on' D. Delacruz's future clock-ins[cite: 178].",
+        "full_summary": "On Jan 16, 2025, concurrently with scheduling the investigation meeting (email24) and taking over scheduling (email23/email26), S. Edwards (GM) requested D. Delacruz's January attendance records from A. Shimizu (Payroll/HR?)[cite: 205]. Edwards also instructed Shimizu to ensure D. Delacruz's time was recorded in the standard OT report for monitoring[cite: 207]. After receiving the timesheet[cite: 200, 201], Edwards questioned D. Delacruz about a missing clock-in time for Jan 12[cite: 193]. D. Delacruz explained he arrived around noon for an event but wasn't sure why it wasn't recorded[cite: 186, 187]. Edwards acknowledged this and stated Shimizu would 'keep an eye on' D. Delacruz's future clock-ins[cite: 178].",
+        "full_summary_ja": "D. Delacruz氏が会議形式/出席者に関する明確化を認識。証拠収集（特に虚偽陳述/スタッフコミュニケーション）は機密性が高く時間がかかると繰り返し述べ、相談を開始し文書化を「来週末までに」正式化する予定だと説明。証拠が後日提出される場合でも会議で懸念を話し合えるか、それとも証拠が完全に準備できるまで待つべきか再度質問し、即時の文書化なしでも詳細が記録されることを望む。",
         "potential_indicators_of_power_harassment": [
             "Increased Scrutiny Following Complaint: Requesting attendance records and instructing specific monitoring of clock-ins immediately after D. Delacruz raised formal concerns (email23) and an investigation meeting was scheduled (email24).",
             "Targeted Monitoring: Singling out D. Delacruz for specific monitoring of clock-in registration ('Shimizu san keep an eye on your clock in card registering')[cite: 178].",
@@ -2284,6 +2359,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "GM Takeover of Rostering",
+        "title_ja": "GMの勤務表の引き継ぎ",
         "evidence_file_title": "email26_2025-01-16_GMTakeoverOfRostering",
         "email_thread_details": {
           "date_range": {
@@ -2367,7 +2444,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This thread documents GM S. Edwards taking over D. Delacruz's scheduling ('rostering') temporarily from S. Forrester, starting Jan 16, 2025, citing the need to manage communication/structure pending the outcome of an 'investigation' (linked to email23 complaint). Edwards provides a roster for Jan 17-30 and establishes new rules for communication and requesting changes (24hr notice via email/WhatsApp, 7shifts request function to be learned). The thread shows D. Delacruz attempting to navigate this new system, clarifying 7shifts functionality issues and requesting specific shift/day off changes, while Edwards manages these requests directly and reinforces the new communication protocols.",
+        "full_summary": "This thread documents GM S. Edwards taking over D. Delacruz's scheduling ('rostering') temporarily from S. Forrester, starting Jan 16, 2025, citing the need to manage communication/structure pending the outcome of an 'investigation' (linked to email23 complaint). Edwards provides a roster for Jan 17-30 and establishes new rules for communication and requesting changes (24hr notice via email/WhatsApp, 7shifts request function to be learned). The thread shows D. Delacruz attempting to navigate this new system, clarifying 7shifts functionality issues and requesting specific shift/day off changes, while Edwards manages these requests directly and reinforces the new communication protocols.",
+        "full_summary_ja": "このスレッドは、GM S. EdwardsがS. ForresterからD. Delacruzのスケジューリング（'rostering'）を一時的に、2025年1月16日から、直接マネージャーの行動について正式な申告を受けた後すぐに、コミュニケーション/構造を管理する必要があると主張しながら、調査の結果が出るまで、スケジューリングを引き継ぐことを記録しています。Edwardsは1月17日から30日までのスケジュールを提供し、コミュニケーションと変更リクエストのための新しいルールを確立します（24時間前以上のメール/WhatsApp通知、7shiftsリクエスト機能を学ぶ）。スレッドは、D. Delacruzが新しいシステムを操作しようと試み、7shifts機能の問題を明確にし、特定のシフト/休日変更を要求する、Edwardsがこれらのリクエストを直接管理し、新しいコミュニケーションプロトコルを強化する方法を示しています。",
         "potential_indicators_of_power_harassment": [
           "Increased Control/Monitoring After Complaint: The GM taking direct control of the employee's schedule immediately following a formal complaint about the direct manager, framing it as needing 'structure' and improving 'communication', while also instituting stricter notification rules and monitoring (calendar access request, attendance check), can be perceived as a controlling response rather than directly addressing the manager's alleged behavior.",
           "Burden Shift: Placing the onus on the employee (D. Delacruz) to learn a new request system (7shifts request function) that even another manager (Morizono) couldn't figure out, while simultaneously criticizing late communication.",
@@ -2392,6 +2470,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Timekeeper Issue Resolution",
+        "title_ja": "タイムキーパーの問題解決",
         "evidence_file_title": "email27_2025-01-21_TimekeeperIssueResolution",
         "email_thread_details": {
           "date_range": {
@@ -2463,7 +2543,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On Jan 21, 2025, S. Edwards questioned D. Delacruz about a missing clock-out time for Jan 20 based on initial timesheet data. D. Delacruz asserted he did clock out around 18:30. J. Masigan (HR) subsequently confirmed, citing information from 'Yumi san', that a system error occurred that night which prevented the clock-out from registering initially, and that D. Delacruz's actual clock-out time was 18:28. Edwards acknowledged the update and the system error.",
+        "full_summary": "On Jan 21, 2025, S. Edwards questioned D. Delacruz about a missing clock-out time for Jan 20 based on initial timesheet data. D. Delacruz asserted he did clock out around 18:30. J. Masigan (HR) subsequently confirmed, citing information from 'Yumi san', that a system error occurred that night which prevented the clock-out from registering initially, and that D. Delacruz's actual clock-out time was 18:28. Edwards acknowledged the update and the system error.",
+        "full_summary_ja": "2025年1月21日、S. Edwardsは、D. Delacruz氏が1月20日の退勤時間がタイムシートデータに基づいて欠けていることを問い、D. Delacruz氏は約18時30分に退勤したと主張。J. Masigan（人事）は、'Yumi san'からの情報に基づいて、夜にシステムエラーが発生し、最初に退勤時間が登録されなかったことを確認し、D. Delacruz氏の実際の退勤時間は18時28分であることを示唆。Edwardsは更新情報とシステムエラーを認めました。",
         "potential_indicators_of_power_harassment": [
           "Timing of Scrutiny: This inquiry into a missing clock-out time occurs immediately after D. Delacruz raised formal concerns (email23) and during the period Edwards took over scheduling and requested attendance records (email25, email26). While the issue was ultimately a system error, the timing suggests heightened scrutiny.",
           "Initial Implication: Edwards' initial email implies potential employee error ('Can I please confirm that you tapped out...') before verifying if it was a system issue, placing the initial burden on the employee."
@@ -2482,6 +2563,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "FB Online Audit and Support Request",
+        "title_ja": "FBオンライン監査とサポート要件",
         "evidence_file_title": "email28_2025-01-19_FBOnlineAuditAndSupportRequest",
         "email_thread_details": {
           "date_range": {
@@ -2536,7 +2619,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This thread relates to the F&B Online Platform Audit. D. Delacruz submits the report (Jan 19). J. Kannan (Revenue) provides feedback on specific platform issues and requests report timing change to mid-week (Jan 20). S. Edwards (GM) instructs D. Delacruz and Kannan to resolve issues, tells D. Delacruz to set reminder for mid-week submission (Jan 20). Crucially, Edwards then asks S. Forrester ('Steve') to assign another team member to work with D. Delacruz on the audit task, explicitly citing knowledge sharing and leave coverage as reasons.",
+        "full_summary": "This thread relates to the F&B Online Platform Audit. D. Delacruz submits the report (Jan 19). J. Kannan (Revenue) provides feedback on specific platform issues and requests report timing change to mid-week (Jan 20). S. Edwards (GM) instructs D. Delacruz and Kannan to resolve issues, tells D. Delacruz to set reminder for mid-week submission (Jan 20). Crucially, Edwards then asks S. Forrester ('Steve') to assign another team member to work with D. Delacruz on the audit task, explicitly citing knowledge sharing and leave coverage as reasons.",
+        "full_summary_ja": "このスレッドは、F&Bオンラインプラットフォーム監査に関連しています。D. Delacruz氏がレポートを提出（1月19日）。J. Kannan（収益）は、特定のプラットフォームの問題点をフィードバックし、レポートの提出タイミングを週半ば（1月20日）に変更を依頼。S. Edwards（GM）は、D. Delacruz氏とKannan氏に問題解決を依頼し、D. Delacruz氏に週半ば（水曜正午）のレポート提出リマインダーを設定するよう指示し、休みの場合は早期提出手配を依頼。さらに、S. Forrester氏（「スティーブ」）に対し、知識共有と休暇カバーのため、このタスクでD. Delacruz氏と協力する別のチームメンバーを割り当てるよう依頼。",
         "potential_indicators_of_power_harassment": [
           "Context for Later Actions: This email shows the GM requesting Forrester assign someone to share knowledge/cover for D. Delacruz on the audit task. This context might be relevant if Forrester later fails to provide this support or criticizes D. Delacruz for audit-related issues without acknowledging this directive.",
           "Micromanagement (Potential): While assigning backup is reasonable, the specific instruction for D. Delacruz to set a calendar reminder for report submission could be seen as slightly micromanaging, depending on prior performance context."
@@ -2555,6 +2639,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Urgent Signage Request",
+        "title_ja": "緊急の看板要件",
         "evidence_file_title": "email29_2025-01-22_UrgentSignageRequest",
         "email_thread_details": {
           "date_range": {
@@ -2604,7 +2690,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On the morning of Jan 22, S. Edwards (GM) tasked D. Delacruz with putting out signage for two events (Hospo night, Salsa) by 1 PM that day. At 2:29 PM, D. Delacruz replied he would print posters and place them. Concurrently (also 2:29 PM), S. Forrester replied to Edwards/Delacruz stating the task wasn't done, acknowledging D. Delacruz lacked digital TV versions, instructing him to put out 'some sort' of signage anyway, and reminding him of prior discussions requiring digital TV signage for future use.",
+        "full_summary": "On the morning of Jan 22, S. Edwards (GM) tasked D. Delacruz with putting out signage for two events (Hospo night, Salsa) by 1 PM that day. At 2:29 PM, D. Delacruz replied he would print posters and place them. Concurrently (also 2:29 PM), S. Forrester replied to Edwards/Delacruz stating the task wasn't done, acknowledging D. Delacruz lacked digital TV versions, instructing him to put out 'some sort' of signage anyway, and reminding him of prior discussions requiring digital TV signage for future use.",
+        "full_summary_ja": "1月22日の朝、S. Edwards（GM）はD. Delacruzに2つのイベント（ホスポナイト、サルサ）のサイネージを1時以降に出すタスクを交代しました。2時29分、D. Delacruzはポスターを印刷して設置するつもりだと返信しました。同時に（2時29分）、S. ForresterはEdwards/Delacruzにタスクがまだ完了していないと述べ、D. Delacruzが必要なデジタルTV版を持っていないことに認め、とにかく「何らかのサイネージ」を出すよう指示し、以前の議論をD. Delacruz氏に念を押して、現在4台中1台しか使用されていないと指摘しました。",
         "potential_indicators_of_power_harassment": [
           "Short Notice Demand: Requesting signage for two events be created and deployed within hours (9 AM request for 1 PM deadline).",
           "Criticism Despite Constraints (Potential): Forrester criticizing the task as 'not yet complete' while acknowledging D. Delacruz lacked the required digital format could be seen as unfair pressure, especially given the short notice.",
@@ -2627,6 +2714,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Mandatory Training Enrollment Issue",
+        "title_ja": "義務教育の登録問題",
         "evidence_file_title": "email30_2025-01-08_MandatoryTrainingEnrollmentIssue",
         "email_thread_details": {
           "date_range": {
@@ -2700,7 +2789,8 @@
              }
           ]
         },
-        "summary_for_lawyers": "This thread involves S. Forrester instructing D. Delacruz on Jan 22 to enroll in 'Global Heartist Training' within January and report back by Jan 23. D. Delacruz pointed out that Jan 22 was the last available date for January according to the training calendar (sent Jan 8), making immediate enrollment impossible. He stated he had discussed attending in February with management and would confirm after checking the Feb schedule. Forrester followed up on Feb 6 asking when D. Delacruz had registered. D. Delacruz confirmed attendance for Feb 19.",
+        "full_summary": "This thread involves S. Forrester instructing D. Delacruz on Jan 22 to enroll in 'Global Heartist Training' within January and report back by Jan 23. D. Delacruz pointed out that Jan 22 was the last available date for January according to the training calendar (sent Jan 8), making immediate enrollment impossible. He stated he had discussed attending in February with management and would confirm after checking the Feb schedule. Forrester followed up on Feb 6 asking when D. Delacruz had registered. D. Delacruz confirmed attendance for Feb 19.",
+        "full_summary_ja": "このスレッドは、S. Forrester氏が1月22日にD. Delacruz氏に「グローバルハーティストトレーニング」を1月に受講するよう依頼し、1月23日に報告するよう依頼したことを含みます。D. Delacruz氏は、トレーニングカレンダー（1月8日送信）によると、1月22日が1月の最後の利用可能な日であることを指摘し、即時受講不可能であることを指摘。彼は、管理と話し合い、2月のスケジュールを確認した後、2月19日に出席することを確認するつもりと述べました。Forrester氏は、2月6日にD. Delacruz氏が登録したかどうか尋ねました。D. Delacruz氏は、2月19日に出席することを確認しました。",
         "potential_indicators_of_power_harassment": [
             "Unreasonable/Impossible Demand: Instructing an employee (Jan 22) to enroll in a training 'this month' (January) and report back by the next day, when the last available session for that month was reportedly the same day (Jan 22), making compliance difficult or impossible.",
             "Ignoring Employee Feedback/Context: Proceeding with the instruction despite D. Delacruz pointing out the logistical impossibility based on the provided calendar.",
@@ -2721,6 +2811,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Roster Conflict GM vs Manager",
+        "title_ja": "勤務表の競合 GM vs 管理者",
         "evidence_file_title": "email31_2025-01-22_RosterConflictGMDvsManager",
         "email_thread_details": {
           "date_range": {
@@ -2780,7 +2872,8 @@
              }
           ]
         },
-        "summary_for_lawyers": "This thread shows conflicting directions regarding D. Delacruz working on Saturday, Jan 25. D. Delacruz requested (Jan 22, 11:41 AM) to work the Saturday event for operational reasons. GM S. Edwards consulted S. Forrester (11:57 AM). Forrester replied (1:23 PM) stating D. Delacruz was *not* required for the Saturday event, downplaying its needs ('same event as normal') and redirecting D. Delacruz's focus to other tasks (marketing new events, newsletter, audit). Immediately following Forrester's email, Edwards replied (1:27 PM), acknowledging Forrester's feedback but then telling D. Delacruz directly he would give him Saturday off (contradicting D. Delacruz's request to work), citing D. Delacruz having worked his day off 'yesterday'. Edwards emphasized needing D. Delacruz present when management is for communication.",
+        "full_summary": "This thread shows conflicting directions regarding D. Delacruz working on Saturday, Jan 25. D. Delacruz requested (Jan 22, 11:41 AM) to work the Saturday event for operational reasons. GM S. Edwards consulted S. Forrester (11:57 AM). Forrester replied (1:23 PM) stating D. Delacruz was *not* required for the Saturday event, downplaying its needs ('same event as normal') and redirecting D. Delacruz's focus to other tasks (marketing new events, newsletter, audit). Immediately following Forrester's email, Edwards replied (1:27 PM), acknowledging Forrester's feedback but then telling D. Delacruz directly he would give him Saturday off (contradicting D. Delacruz's request to work), citing D. Delacruz having worked his day off 'yesterday'. Edwards emphasized needing D. Delacruz present when management is for communication.",
+        "full_summary_ja": "このスレッドは、D. Delacruz氏が1月25日土曜日に働くことを要求したことを示します。D. Delacruz氏は、1月22日11時41分に、土曜日のイベントのために業務を遂行する理由を述べました。GM S. Edwards氏は、1月22日11時57分にS. Forrester氏に相談しました。Forrester氏は、1月25日土曜日のイベントのためにD. Delacruz氏が必要ではないと述べ、その必要性を軽視（「通常と同じイベント」）し、D. Delacruz氏の焦点を他のタスク（新しいイベントのマーケティング、ニュースレター、監査）に転換しました。Forrester氏のメールの直後に、Edwards氏は、Forrester氏のフィードバックを認めながら、D. Delacruz氏が土曜日に休みを取ることを直接告げ、D. Delacruz氏が「昨日」（火曜、彼の勤務表上の休日）働いたことを引用して、D. Delacruz氏の要求を無視しました。Edwards氏は、管理職がいるときにD. Delacruz氏がコミュニケーションのために存在することの重要性を強調しました。",
         "potential_indicators_of_power_harassment": [
           "Manager Undermining Employee Initiative/Expertise: Forrester dismissing D. Delacruz's stated operational reason ('check everything runs smoothly') for wanting to work the Saturday event.",
           "Conflicting Directives: Forrester states D. Delacruz is not needed Saturday and should focus elsewhere. Edwards, while acknowledging Forrester's feedback, gives D. Delacruz Saturday off, ignoring D. Delacruz's request to work for operational reasons.",
@@ -2806,6 +2899,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Kickboxing Event Planning",
+        "title_ja": "キックボクシングイベント計画",
         "evidence_file_title": "email32_2024-05-27_KickboxingEventPlanning",
         "email_thread_details": {
           "date_range": {
@@ -2846,7 +2941,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This brief email thread from May 2024 shows S. Edwards (GM) inquiring about a kickboxing trial event. Importantly, Edwards specifically tasks D. Delacruz and M. Silvestre ('David/Angela') with discussing 'other areas' related to the event organizers' requests. This demonstrates that in mid-2024, the GM directly involved D. Delacruz in discussions related to F&B/event partnerships.",
+        "full_summary": "This brief email thread from May 2024 shows S. Edwards (GM) inquiring about a kickboxing trial event. Importantly, Edwards specifically tasks D. Delacruz and M. Silvestre ('David/Angela') with discussing 'other areas' related to the event organizers' requests. This demonstrates that in mid-2024, the GM directly involved D. Delacruz in discussions related to F&B/event partnerships.",
+        "full_summary_ja": "このメールスレッドは、2024年5月のS. Edwards（GM）がキックボクシングトライアルイベントについて尋ねていることを示します。重要的是、EdwardsはD. DelacruzとM. Silvestre（'David/Angela'）を、イベント主催者の要求に関連する「他の分野」について話し合うように依頼します。これは、2024年中盤、GMがD. DelacruzをF&B/イベントパートナーシップに関連する議論に直接巻き込むことを示しています。",
         "potential_indicators_of_power_harassment": [
           "Historical Context/Contrast: Similar to emails 08, 09, 10, this earlier email (May 2024) shows the GM directly including D. Delacruz in planning/discussions related to F&B events/activities. This can be contrasted with the different dynamics and treatment observed in Jan-Apr 2025 emails."
         ],
@@ -2861,6 +2957,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "IGLTA Oktoberfest Planning",
+        "title_ja": "IGLTA Oktoberfest計画",
         "evidence_file_title": "email33_2024-06-17_IGLTAOktoberfestPlanning",
         "email_thread_details": {
           "date_range": {
@@ -2900,7 +2998,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This email from June 17, 2024, shows S. Edwards (GM) initiating planning for October events (IGLTA catering breaks, Oktoberfest). Edwards specifically includes D. Delacruz (via CC and direct mention) alongside E. Truter in the task of preparing/highlighting the Oktoberfest proposal following a broader meeting. This indicates D. Delacruz's involvement in strategic event planning and proposal development as directed by the GM during this period.",
+        "full_summary": "This email from June 17, 2024, shows S. Edwards (GM) initiating planning for October events (IGLTA catering breaks, Oktoberfest). Edwards specifically includes D. Delacruz (via CC and direct mention) alongside E. Truter in the task of preparing/highlighting the Oktoberfest proposal following a broader meeting. This indicates D. Delacruz's involvement in strategic event planning and proposal development as directed by the GM during this period.",
+        "full_summary_ja": "2024年6月17日のこのメールは、S. Edwards（GM）が10月のイベント（IGLTAのケータリング休憩、オクトーバーフェスト）の計画を開始するのを示します。Edwardsは、より広範な議論の後に、オクトーバーフェスト提案を強調するように、E. Truter氏とD. Delacruz氏（「エティエンヌ/ デビッド」）を（CCおよび直接引用）含めて、 Oktoberfest提案の準備/強調のタスクに含めます。これは、この期間中にGMによって指示された戦略的イベント計画と提案開発におけるD. Delacruz氏の関与を示しています。",
         "potential_indicators_of_power_harassment": [
             "Historical Context/Contrast: Similar to other earlier emails (May/Aug/Dec 2024), this June 2024 email shows D. Delacruz being actively included by the GM in planning significant future events (IGLTA/Oktoberfest). This positive inclusion contrasts with the exclusion and criticism documented in later emails from 2025."
         ],
@@ -2917,6 +3016,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "IGLTA Week Event Calendar",
+        "title_ja": "IGLTA週間イベントカレンダー",
         "evidence_file_title": "email34_2024-06-19_IGLTAWeekEventCalendar",
         "email_thread_details": {
           "date_range": {
@@ -3014,7 +3115,8 @@
              }
           ]
         },
-        "summary_for_lawyers": "This thread from June 2024 details planning for events during IGLTA week in October. It shows S. Edwards (GM) actively involving D. Delacruz in coordination and planning. Edwards tasks D. Delacruz with confirming supplier setup times (Jun 18). D. Delacruz provides information on the Kickboxing event logistics (Jun 19) and promptly delivers a requested tentative event calendar for the week (Jun 19). Edwards responds positively ('Okay thank you.') and outlines further planning steps based on the calendar provided by D. Delacruz. This demonstrates proactive work and positive feedback/collaboration between D. Delacruz and the GM on event planning during this period.",
+        "full_summary": "This thread from June 2024 details planning for events during IGLTA week in October. It shows S. Edwards (GM) actively involving D. Delacruz in coordination and planning. Edwards tasks D. Delacruz with confirming supplier setup times (Jun 18). D. Delacruz provides information on the Kickboxing event logistics (Jun 19) and promptly delivers a requested tentative event calendar for the week (Jun 19). Edwards responds positively ('Okay thank you.') and outlines further planning steps based on the calendar provided by D. Delacruz. This demonstrates proactive work and positive feedback/collaboration between D. Delacruz and the GM on event planning during this period.",
+        "full_summary_ja": "2024年6月のこのスレッドは、S. Edwards（GM）が10月のIGLTA週間のイベント計画を開始するのを示します。Edwardsは、より広範な議論の後に、オクトーバーフェスト提案を強調するように、E. Truter氏とD. Delacruz氏（「エティエンヌ/ デビッド」）を（CCおよび直接引用）含めて、 Oktoberfest提案の準備/強調のタスクに含めます。これは、この期間中にGMによって指示された戦略的イベント計画と提案開発におけるD. Delacruz氏の関与を示しています。",
         "potential_indicators_of_power_harassment": [
           "Historical Context/Contrast: Provides further evidence from mid-2024 showing D. Delacruz actively involved in event planning, providing information requested by the GM, and receiving positive acknowledgement ('Okay thank you.'). This contrasts with the negative interactions and alleged performance issues cited in 2025."
         ],
@@ -3035,6 +3137,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Exclusion From RevMax Meeting",
+        "title_ja": "RevMaxミーティングの排除",
         "evidence_file_title": "email35_2025-03-06_ExclusionFromRevMaxMeeting",
         "email_thread_details": {
           "date_range": {
@@ -3059,7 +3163,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On March 6, 2025, S. Forrester directly instructed D. Delacruz via email *not* to attend the F&B RevMax meeting scheduled for that day. Forrester redirected D. Delacruz to work on and submit the online audit instead. This contrasts with D. Delacruz's previous inclusion in high-level F&B strategy discussions (e.g., email03 cancellation notice listed him as required, email08 Alchemist calls).",
+        "full_summary": "On March 6, 2025, S. Forrester directly instructed D. Delacruz via email *not* to attend the F&B RevMax meeting scheduled for that day. Forrester redirected D. Delacruz to work on and submit the online audit instead. This contrasts with D. Delacruz's previous inclusion in high-level F&B strategy discussions (e.g., email03 cancellation notice listed him as required, email08 Alchemist calls).",
+        "full_summary_ja": "2025年3月6日、S. Forrester氏はD. Delacruz氏に直接メールし、その日に予定されていたF&B RevMax会議に出席しないよう指示。代わりに、オンライン監査に取り組み、同日中に送信するよう指示。これは、D. Delacruz氏の過去の高レベルF&B戦略討論（例：email03キャンセル通知、email08アルケミストコール）における含められることを示す。",
         "potential_indicators_of_power_harassment": [
           "Exclusion: Explicitly excluding an employee (F&B Marketing) from a key departmental strategy meeting (F&B RevMax) where their input would typically be relevant.",
           "Demotion of Role/Responsibility (Implied): Redirecting the employee from a strategic meeting to an administrative task (online audit) could imply a diminution of their role or perceived competence.",
@@ -3078,6 +3183,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Meeting Debrief and Micromanagement",
+        "title_ja": "ミーティングの反省と微管理",
         "evidence_file_title": "email36_2025-03-06_MeetingDebriefAndMicromanagement",
         "email_thread_details": {
           "date_range": {
@@ -3128,7 +3235,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "S. Forrester emails D. Delacruz late on Mar 6, noting a 30-min meeting ran over an hour. Sarcastically asks for detailed breakdown by 10am next morning, speculating details were shared without him. Demands answers on event name, ROI, etc., mandates his inclusion in future initial meetings. D. Delacruz replies (Mar 7, 4:54 PM), provides detailed breakdown of 'Pink Cherry Party' meeting, explains why meeting extended slightly (showing venue), explains why 10am deadline was unreasonable (other tasks, time needed). A. Yorifuji emails Forrester later (6:42 PM) confirming key event details discussed 'today' (Mar 7) and justifying acceptance based on revenue opportunity.",
+        "full_summary": "S. Forrester emails D. Delacruz late on Mar 6, noting a 30-min meeting ran over an hour. Sarcastically asks for detailed breakdown by 10am next morning, speculating details were shared without him. Demands answers on event name, ROI, etc., mandates his inclusion in future initial meetings. D. Delacruz replies (Mar 7, 4:54 PM), provides detailed breakdown of 'Pink Cherry Party' meeting, explains why meeting extended slightly (showing venue), explains why 10am deadline was unreasonable (other tasks, time needed). A. Yorifuji emails Forrester later (6:42 PM) confirming key event details discussed 'today' (Mar 7) and justifying acceptance based on revenue opportunity.",
+        "full_summary_ja": "S. Forrester氏がD. Delacruz氏にメール（cc: Y. Morizono氏）。30分の会議が1時間以上延長されたことに注意。次日の午前10時まで詳細な内訳を要求し、詳細が彼の存在なしで共有された可能性を疑う。イベント名、ROIなどへの回答を求め、今後の初期会議に彼を含めるよう要求。D. Delacruz氏は午後4時54分に「ピンクチェリーパーティー」の会議の詳細内訳を提供し、会議がわずかに延長された理由（会場の案内）を説明し、午前10時までの期限は他のタスクと内訳作成自体の時間が必要だと説明。午後6時42分、A. Yorifuji氏は「今日」（3月7日）に議論された重要なイベントの詳細を確認し、収益機会として受け入れを正当化。",
         "potential_indicators_of_power_harassment": [
           "Micromanagement/Distrust: Questioning time spent in meeting ('out of office for more than one hour'), demanding extremely detailed breakdown with short deadline.",
           "Sarcastic/Accusatory Tone: Forrester's opening ('Seems the meeting must have gone well...') and speculation ('must have been more details shared without management presence').",
@@ -3153,6 +3261,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Weekly Task List Submission and Micromanagement",
+        "title_ja": "週間タスクリスト提出と微管理",
         "evidence_file_title": "email37_2025-03-10_WeeklyTaskListSubmissionAndMicromanagement",
         "email_thread_details": {
           "date_range": {
@@ -3204,7 +3314,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "Following Forrester's request for a weekly work plan (email21), D. Delacruz submitted a list of 4 tasks with estimated completion times (Mar 10). Forrester replied (Mar 11, 8:53 AM) with highly critical and detailed questions about each task, questioning the necessity, timeframe, and overlap of the work (e.g., comparing audit time to Jayesh, asking why flyer wasn't done yesterday, conflating microsite updates with audit). Forrester then stated D. Delacruz seemed to have 'a lot of spare time' and demanded a new proactive plan to increase restaurant patronage, linking lack of growth to potential resource/labor cuts. D. Delacruz responded (Mar 11, 11:49 AM), refuting the 'spare time' assumption and providing detailed justifications for each task and timeframe questioned by Forrester. He agreed to create the patronage plan after current priorities and requested clarification/decision on using EDMs.",
+        "full_summary": "Following Forrester's request for a weekly work plan (email21), D. Delacruz submitted a list of 4 tasks with estimated completion times (Mar 10). Forrester replied (Mar 11, 8:53 AM) with highly critical and detailed questions about each task, questioning the necessity, timeframe, and overlap of the work (e.g., comparing audit time to Jayesh, asking why flyer wasn't done yesterday, conflating microsite updates with audit). Forrester then stated D. Delacruz seemed to have 'a lot of spare time' and demanded a new proactive plan to increase restaurant patronage, linking lack of growth to potential resource/labor cuts. D. Delacruz responded (Mar 11, 11:49 AM), refuting the 'spare time' assumption and providing detailed justifications for each task and timeframe questioned by Forrester. He agreed to create the patronage plan after current priorities and requested clarification/decision on using EDMs.",
+        "full_summary_ja": "フォレスター氏からの週次作業計画の要求（email21）を受け、D. デラクルス氏は推定完了時間を含む4つのタスクのリストを提出しました（3月10日）。フォレスター氏は（3月11日午前8時53分）、各タスクについて非常に批判的かつ詳細な質問で返信し、作業の必要性、期間、重複について疑問を呈しました（例：ジャイエシュ氏との監査時間の比較、チラシが昨日作成されなかった理由の質問、マイクロサイトの更新と監査の混同）。その後、フォレスター氏は、D. デラクルス氏には「多くの余暇時間」があるように見えると述べ、レストランの利用客増加のための新しい積極的な計画を要求し、成長の欠如を潜在的なリソース/人件費削減に結び付けました。D. デラクルス氏は（3月11日午前11時49分）に返信し、「余暇時間」の仮定に反論し、フォレスター氏が疑問視した各タスクと期間について詳細な正当化を提示しました。彼は現在の優先事項の後に利用客増加計画を作成することに同意し、EDMの使用に関する明確化/決定を要求しました。",
         "potential_indicators_of_power_harassment": [
           "Intense Micromanagement/Scrutiny: Forrester's granular questioning of every task and timeframe submitted in the work plan.",
           "Unreasonable Expectations/Comparisons: Questioning task durations without understanding scope (audit vs. Jayesh), demanding flyer drafts be done 'yesterday' based on estimated timeframe.",
@@ -3233,6 +3344,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Hanami BBQ Poster Request",
+        "title_ja": "ハナミBBQポスターリクエスト",
         "evidence_file_title": "email38_2025-02-21_HanamiBBQPosterRequest",
         "email_thread_details": {
           "date_range": {
@@ -3351,7 +3464,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This thread shows the HR department (J. Masigan, N. Ogata) organizing a staff Hanami BBQ event for late March 2025. On Feb 28, Masigan asks D. Delacruz to create the event poster, referencing his work from the previous year. On Mar 6, Ogata follows up requesting the poster 'today'. D. Delacruz explains he was on leave and couldn't start, promising it by Mar 7. He delivers the poster on Mar 7, and Ogata thanks him for the help. The user's file name suggests they got into trouble despite helping HR.",
+        "full_summary": "This thread shows the HR department (J. Masigan, N. Ogata) organizing a staff Hanami BBQ event for late March 2025. On Feb 28, Masigan asks D. Delacruz to create the event poster, referencing his work from the previous year. On Mar 6, Ogata follows up requesting the poster 'today'. D. Delacruz explains he was on leave and couldn't start, promising it by Mar 7. He delivers the poster on Mar 7, and Ogata thanks him for the help. The user's file name suggests they got into trouble despite helping HR.",
+        "full_summary_ja": "人事部門（Masigan氏、Ogata氏）が2025年3月のスタッフ花見BBQイベントを計画しています。2月28日にMasigan氏は前年の作業を参考にイベントポスターやを作成してほしいと依頼します。3月6日にOgata氏は「今日」にポスターを求めるのを追ってきます。Delacruz氏は休暇中で開始できなかったことを説明し、3月7日に完成する約束をします。Delacruz氏は3月7日にポスターを送り、Ogata氏は協力に感謝します。ユーザーのファイル名は、彼らが人事部門を助けることにもかかわらず、問題に巻き込まれていることを示しています。",
         "potential_indicators_of_power_harassment": [
           "Contradictory Context (Implied by filename): The email thread itself shows a standard work request from HR, a reasonable explanation for a minor delay (return from leave), timely delivery, and positive acknowledgement from HR. However, the filename ('...still getting into trouble') implies that despite this positive interaction and helpfulness towards HR, D. Delacruz faced negative consequences or criticism from his manager (presumably Forrester) related to this task or the time spent on it. This contradiction would be the key indicator if substantiated.",
           "Timing: This request from HR comes during the period of heightened scrutiny and conflict documented in other emails (late Feb/early Mar). Performing tasks for other departments, even when requested, could potentially be used by Forrester as evidence of neglecting primary duties (as hinted in email30)."
@@ -3372,6 +3486,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Hanami BBQ Poster Followup",
+        "title_ja": "ハナミBBQポスターフォロー",
         "evidence_file_title": "email39_2025-02-28_HanamiBBQPosterFollowup",
         "email_thread_details": {
           "date_range": {
@@ -3444,7 +3560,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "Following HR (J. Masigan)'s request on Feb 28 for D. Delacruz to create a staff event poster (Hanami BBQ), D. Delacruz delivered the completed poster on Mar 7 (after a short delay due to leave) and received thanks from HR (N. Ogata). Days later, on Mar 11, S. Forrester replied to the original Feb 28 request, instructing HR that future requests for D. Delacruz must go through him. Forrester justified this by stating D. Delacruz's productivity was under question, his task list was 'minimal', he shouldn't do outside jobs, and implied his labor hours might be reassigned if he has 'significant time to assist'. J. Masigan acknowledged Forrester's directive on Mar 12 but explicitly thanked D. Delacruz for his help.",
+        "full_summary": "Following HR (J. Masigan)'s request on Feb 28 for D. Delacruz to create a staff event poster (Hanami BBQ), D. Delacruz delivered the completed poster on Mar 7 (after a short delay due to leave) and received thanks from HR (N. Ogata). Days later, on Mar 11, S. Forrester replied to the original Feb 28 request, instructing HR that future requests for D. Delacruz must go through him. Forrester justified this by stating D. Delacruz's productivity was under question, his task list was 'minimal', he shouldn't do outside jobs, and implied his labor hours might be reassigned if he has 'significant time to assist'. J. Masigan acknowledged Forrester's directive on Mar 12 but explicitly thanked D. Delacruz for his help.",
+        "full_summary_ja": "人事部門（Masigan氏、Ogata氏）が2025年3月のスタッフ花見BBQイベントを計画しています。2月28日にMasigan氏は前年の作業を参考にイベントポスターやを作成してほしいと依頼します。3月6日にOgata氏は「今日」にポスターを求めるのを追ってきます。Delacruz氏は休暇中で開始できなかったことを説明し、3月7日に完成する約束をします。Delacruz氏は3月7日にポスターを送り、Ogata氏は協力に感謝します。ユーザーのファイル名は、彼らが人事部門を助けることにもかかわらず、問題に巻き込まれていることを示しています。",
         "potential_indicators_of_power_harassment": [
           "Undermining/Devaluing Work: Forrester intervening *after* a requested task was successfully completed for another department (HR) to criticize the process and D. Delacruz's productivity.",
           "Questioning Productivity/Threatening Reassignment: Claiming D. Delacruz's task list is 'minimal' and productivity is questioned (contradicting workload shown in email30), then linking perceived 'spare time' to potential reassignment of labor hours.",
@@ -3466,6 +3583,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Gladiator Event Meeting Setup Exclusion",
+        "title_ja": "グレードィアターイベントミーティングセットアップ除外",
         "evidence_file_title": "email40_2025-03-14_GladiatorEventMeetingSetupExclusion",
         "email_thread_details": {
           "date_range": {
@@ -3539,7 +3658,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "D. Delacruz initiated follow-up on the 'Gladiator' kickboxing event (Mar 14), informing management of the organizers' request for an update and their plan to meet at the hotel on Mar 19. S. Forrester replied (Mar 15), instructing D. Delacruz to arrange the meeting but stated that only Forrester, Y. Morizono, and 'Shimizu san' would attend, explicitly excluding D. Delacruz. S. Edwards later asked for an update (Mar 17). D. Delacruz provided a summary of prior discussions, proposed an internal pre-meeting, and asked Forrester to confirm timing for the Mar 19 organizer meeting he was asked to set up (but excluded from). Edwards agreed a pre-meeting was needed.",
+        "full_summary": "D. Delacruz initiated follow-up on the 'Gladiator' kickboxing event (Mar 14), informing management of the organizers' request for an update and their plan to meet at the hotel on Mar 19. S. Forrester replied (Mar 15), instructing D. Delacruz to arrange the meeting but stated that only Forrester, Y. Morizono, and 'Shimizu san' would attend, explicitly excluding D. Delacruz. S. Edwards later asked for an update (Mar 17). D. Delacruz provided a summary of prior discussions, proposed an internal pre-meeting, and asked Forrester to confirm timing for the Mar 19 organizer meeting he was asked to set up (but excluded from). Edwards agreed a pre-meeting was needed.",
+        "full_summary_ja": "D. Delacruz氏が「Gladiator」キックボクシングイベントのフォローアップを開始（3月14日）。管理陣に主催者の更新要請とホテルでの会議計画（3月19日）を伝えました。S. Forrester氏（3月15日）は、D. Delacruz氏を会議の計画者と指示しましたが、Forrester氏、Y. Morizono氏、そして「Shimizu san」のみが出席する予定であり、D. Delacruz氏を明確に除外しました。S. Edwards氏（3月17日）は更新を要求しました。D. Delacruz氏は過去の議論を要約し、内部事前会議を提案し、Forrester氏が計画していた3月19日の主催者会議の時間確認を求めました（しかし、彼は除外されました）。Edwards氏は事前会議が必要だと同意しました。",
         "potential_indicators_of_power_harassment": [
           "Exclusion from Key Meeting: Forrester explicitly excluding D. Delacruz from the meeting with event organizers, despite D. Delacruz being the apparent primary contact who initiated the follow-up and was tasked with arranging the meeting.",
           "Undermining Role/Contribution: Preventing the F&B Marketing person from attending a meeting crucial for discussing event details, sponsorship, and relationship building with an external partner.",
@@ -3561,6 +3681,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Request for Booking System Training",
+        "title_ja": "予約システムトレーニング要請",
         "evidence_file_title": "email41_2025-05-01_RequestForBookingSystemTraining",
         "email_thread_details": {
           "date_range": {
@@ -3602,7 +3724,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On May 1, 2025, S. Forrester instructed Y. Morizono and A. Nishiyama to schedule training on the Tablecheck/Ikyu booking systems for D. Delacruz and another employee (Vanessa Adeline). Forrester justified this by stating 'extra bodies in the office' should be able to handle phone calls and bookings, and to provide coverage. Y. Morizono acknowledged and proposed a training schedule.",
+        "full_summary": "On May 1, 2025, S. Forrester instructed Y. Morizono and A. Nishiyama to schedule training on the Tablecheck/Ikyu booking systems for D. Delacruz and another employee (Vanessa Adeline). Forrester justified this by stating 'extra bodies in the office' should be able to handle phone calls and bookings, and to provide coverage. Y. Morizono acknowledged and proposed a training schedule.",
+        "full_summary_ja": "2025年5月1日、S. Forrester氏がY. Morizono氏とA. Nishiyama氏に、D. Delacruz氏と別の従業員（Vanessa Adeline氏）のTablecheck/Ikyu予約システムのトレーニングスケジュールを作成するよう指示しました。Forrester氏は、オフィスに余剰人員がいれば電話や予約を処理できる、カバーを提供できるという理由でこれを正当化しました。Y. Morizono氏は認め、トレーニングスケジュールを提案しました。",
         "potential_indicators_of_power_harassment": [
           "Assigning Tasks Outside Job Scope (Potential): Assigning phone/booking duties and mandatory system training to the F&B Marketing person (D. Delacruz), framing it as utilizing 'extra bodies', could be seen as assigning tasks outside his primary marketing responsibilities without consultation or agreement, potentially to fill gaps or exert control.",
           "Justification Based on Presence ('Extra Bodies'): The rationale implies D. Delacruz's time or role is considered flexible enough to absorb operational booking tasks, potentially devaluing his core marketing functions.",
@@ -3622,6 +3745,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Event Booking Process Update",
+        "title_ja": "イベント予約プロセス更新",
         "evidence_file_title": "email42_2024-11-05_EventBookingProcessUpdate",
         "email_thread_details": {
           "date_range": {
@@ -3648,7 +3773,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "In November 2024, S. Forrester implemented a new process for F&B event bookings. Key directives included: D. Delacruz must be included in all event correspondence, with Forrester cc'd. A detailed 'Entertainment Agreement Form' became mandatory for specific events to ensure commercial viability. Signed agreements needed inclusion in a promotional matrix. This email establishes D. Delacruz's mandated involvement in event communication flow under Forrester's oversight during this period.",
+        "full_summary": "In November 2024, S. Forrester implemented a new process for F&B event bookings. Key directives included: D. Delacruz must be included in all event correspondence, with Forrester cc'd. A detailed 'Entertainment Agreement Form' became mandatory for specific events to ensure commercial viability. Signed agreements needed inclusion in a promotional matrix. This email establishes D. Delacruz's mandated involvement in event communication flow under Forrester's oversight during this period.",
+        "full_summary_ja": "2024年11月、S. Forrester氏がF&Bマネージャーにメール（cc: M. Silvestre氏）。アウトレットイベント予約の新しい手順を設定。すべての連絡にD. Delacruz氏（「デビッドの包含」）を含め、Forrester氏自身をCCに入れるよう命令。エンターテイメント/特別手配を伴うイベントには、商業的実行可能性のため、詳細な「エンターテイメント契約書」（添付）への署名が必要。新しい手順についてサプライヤーと会う用意があると申し出る。署名済みイベントは、可視性/重複回避のためプロモーションマトリックスに追加する必要あり。新しい手順は効率化と収益性向上を目指すものだと認識。",
         "potential_indicators_of_power_harassment": [
           "Historical Context/Contrast: Shows D. Delacruz being explicitly included in important communication loops regarding events by Forrester in Nov 2024. This can be contrasted with later instances of exclusion (e.g., email33, email36).",
           "Increased Process/Control: Introduction of new mandatory forms and procedures (agreement form, matrix inclusion, mandatory CC to Forrester) could indicate a move towards tighter control over event processes.",
@@ -3668,6 +3794,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Simple Task List",
+        "title_ja": "シンプルなタスクリスト",
         "evidence_file_title": "email43_2024-11-02_SimpleTaskList",
         "email_thread_details": {
           "date_range": {
@@ -3693,7 +3821,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On Nov 2, 2024, S. Forrester provided D. Delacruz with a brief list of four tasks: create kickboxing posters, update online menus, schedule a meeting with 'Lenny', and find a solution for poster stand storage. This demonstrates direct task assignment from Forrester to Delacruz during this period.",
+        "full_summary": "On Nov 2, 2024, S. Forrester provided D. Delacruz with a brief list of four tasks: create kickboxing posters, update online menus, schedule a meeting with 'Lenny', and find a solution for poster stand storage. This demonstrates direct task assignment from Forrester to Delacruz during this period.",
+        "full_summary_ja": "2024年11月2日、S. Forrester氏がD. Delacruz氏にメール（cc: Y. Morizono氏）。短いタスクリストを提供：キックボクシングイベントのロビーポスター作成、11月1日変更後のオンラインメニュー確認/更新、「レニー」氏との会議のカレンダーリクエスト追加（日時必要）、ポスタースタンド保管場所の解決策発見。",
         "potential_indicators_of_power_harassment": [
           "Historical Context/Contrast: Shows routine task assignment in Nov 2024. Can be contrasted with the tone, scrutiny level, and nature of tasks/expectations documented in later emails (e.g., email30, email34, email37)."
         ],
@@ -3715,6 +3844,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Engagement Survey Reminder",
+        "title_ja": "エンゲージメント調査のリマインダー",
         "evidence_file_title": "email44_2024-11-12_EngagementSurveyReminder",
         "email_thread_details": {
           "date_range": {
@@ -3740,7 +3871,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On Nov 12, 2024, S. Forrester sent an urgent reminder to F&B and Culinary managers to have their teams complete an engagement survey (EES). He specifically instructed managers on how to interpret the scores, stating only 9s and 10s represent positive engagement, and anything lower means employees 'are not really engaged'. This instruction on score interpretation could potentially influence how managers perceive or discuss results with their teams.",
+        "full_summary": "On Nov 12, 2024, S. Forrester sent an urgent reminder to F&B and Culinary managers to have their teams complete an engagement survey (EES). He specifically instructed managers on how to interpret the scores, stating only 9s and 10s represent positive engagement, and anything lower means employees 'are not really engaged'. This instruction on score interpretation could potentially influence how managers perceive or discuss results with their teams.",
+        "full_summary_ja": "2024年11月12日、S. Forrester氏が料理リーダーおよびF&Bマネージャー配布リストにメール。チームに従業員エンゲージメント調査（EES）を完了させるよう緊急に指示（「！！！！」）。調査結果を定義：9または10のスコアは肯定的なエンゲージメントを示し、「それ以下は、彼らは実際にはエンゲージしていません」。",
         "potential_indicators_of_power_harassment": [
           "Pressuring Desired Outcomes (Potential): Defining only the highest scores (9, 10) as 'positively engaged' and explicitly stating lower scores mean 'not really engaged' could pressure managers to push for higher scores or dismiss feedback reflected in lower (but potentially still positive or constructive) scores.",
           "Discouraging Honest Feedback (Potential): The filename suggests the user felt the survey was ultimately not anonymous. If combined with Forrester's narrow definition of positive engagement, employees might feel discouraged from providing honest feedback if they fear negative repercussions for scores below 9.",
@@ -3759,6 +3891,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "Reporting Line Change and Roster Instruction",
+        "title_ja": "報告ライン変更とロスタイム指示",
         "evidence_file_title": "email45_2024-11-16_ReportingLineChangeAndRosterInstruction",
         "email_thread_details": {
           "date_range": {
@@ -3799,7 +3933,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "On Nov 16, 2024, S. Forrester announced to Marketing and Revenue leadership (cc GM, HR?, D. Delacruz) that D. Delacruz's reporting line was changed to report directly to Forrester and F&B, instructing correspondence be directed through him. Two days later, GM S. Edwards replied, instructing Forrester to ensure D. Delacruz's roster was updated at least 7 days in advance, specifically mentioning start times, to facilitate meeting scheduling around D. Delacruz's presence.",
+        "full_summary": "On Nov 16, 2024, S. Forrester announced to Marketing and Revenue leadership (cc GM, HR?, D. Delacruz) that D. Delacruz's reporting line was changed to report directly to Forrester and F&B, instructing correspondence be directed through him. Two days later, GM S. Edwards replied, instructing Forrester to ensure D. Delacruz's roster was updated at least 7 days in advance, specifically mentioning start times, to facilitate meeting scheduling around D. Delacruz's presence.",
+        "full_summary_ja": "2024年11月16日、S. Forrester氏がマーケティングおよびレベニューのリーダー（cc: GM、人事？、D. Delacruz）にメール。D. Delacruz氏の報告ラインをForrester氏とF&B部門に直接報告するように変更すると発表。2日後、GM S. Edwards氏が返信し、Forrester氏に対し、D. Delacruz氏の勤務表、特に開始時刻が少なくとも7日前までに更新されるよう確認を指示。これにより会議を組織しD. Delacruz氏の出席を確保できるため。",
         "potential_indicators_of_power_harassment": [
           "Centralizing Control: Shifting the reporting line directly under Forrester and mandating communication flow through him centralizes control, potentially limiting D. Delacruz's direct interaction with other departments or leaders.",
           "Increased Monitoring/Scheduling Constraint: The GM's immediate follow-up instruction to ensure the roster is updated 7 days in advance specifically to manage D. Delacruz's presence for meetings suggests a potential focus on monitoring his time and availability shortly after the reporting line change."
@@ -3817,6 +3952,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "FB Platforms Audit Follow up",
+        "title_ja": "F&Bプラットフォーム監査フォロー",
         "evidence_file_title": "email46_2024-10-02_FBPlatformsAuditFollowup",
         "email_thread_details": {
           "date_range": {
@@ -3902,7 +4039,8 @@
             }
           ]
         },
-        "summary_for_lawyers": "This thread from Oct 2024 shows D. Delacruz proactively conducting and submitting the weekly F&B Platforms Audit, identifying issues, and outlining next steps (contacting vendors, checking critical issues). Management (Edwards, Kannan, Forrester) respond positively. Edwards requests regular follow-up meetings and adds support staff to the loop. Kannan praises the audit format and asks for status updates. Forrester frames the audit process positively ('very positive... Winning...'). This demonstrates D. Delacruz performing his duties effectively and receiving positive/constructive feedback from multiple managers, including Forrester, during this period.",
+        "full_summary": "This thread from Oct 2024 shows D. Delacruz proactively conducting and submitting the weekly F&B Platforms Audit, identifying issues, and outlining next steps (contacting vendors, checking critical issues). Management (Edwards, Kannan, Forrester) respond positively. Edwards requests regular follow-up meetings and adds support staff to the loop. Kannan praises the audit format and asks for status updates. Forrester frames the audit process positively ('very positive... Winning...'). This demonstrates D. Delacruz performing his duties effectively and receiving positive/constructive feedback from multiple managers, including Forrester, during this period.",
+        "full_summary_ja": "2024年10月のこのスレッドは、D. Delacruz氏が週間F&Bプラットフォーム監査を積極的に実施し、問題点を特定し、次のステップを示す（ベンダー連絡、重要な問題点の確認）を示しています。管理（Edwards、Kannan、Forrester）は肯定的に反応。Edwards氏は定期的なフォローミーティングを要求し、サポートスタッフをループに入れる。Kannan氏は監査フォーマットを称賛し、状況更新を要求。Forrester氏は監査プロセスを肯定的に（「非常に肯定的...勝利...」）フレーム。この期間中に複数のマネージャー、特にForrester氏からD. Delacruz氏の業務を効果的に遂行し、建設的フィードバックを受け取るという現象を示しています。",
         "potential_indicators_of_power_harassment": [
           "Historical Context/Contrast: Shows positive, collaborative interactions regarding D. Delacruz's work (the audit) in Oct 2024, with acknowledgement and constructive feedback from Forrester. This contrasts sharply with the negative scrutiny, micromanagement, and questioning of the same audit task in later emails (e.g., email14, email30)."
         ],
@@ -3922,6 +4060,8 @@
       },
       {
         "evidence_type": "email",
+        "title_en": "F&B RevMAX Slides Prep",
+        "title_ja": "F&B RevMAXスライド作成",
         "evidence_file_title": "email47_2024-09-18_F&BRevMAXSlidesPrep",
         "email_thread_details": {
           "date_range": {
@@ -4027,7 +4167,8 @@
              }
           ]
         },
-        "summary_for_lawyers": "This thread from Sep 2024 shows collaborative preparation for F&B RevMAX meetings. J. Kannan (Revenue) requests input from D. Delacruz on EDMs/online challenges. S. Forrester shares meeting minutes, notes positive progress, and later solicits specific input from D. Delacruz, M. Silvestre (Marketing), Y. Morizono (F&B Mgr), and J. Kannan for refining presentation slides before finalizing with the GM. This indicates D. Delacruz was an integral part of the F&B RevMAX preparation and discussion process, with his input explicitly requested by Forrester.",
+        "full_summary": "This thread from Sep 2024 shows collaborative preparation for F&B RevMAX meetings. J. Kannan (Revenue) requests input from D. Delacruz on EDMs/online challenges. S. Forrester shares meeting minutes, notes positive progress, and later solicits specific input from D. Delacruz, M. Silvestre (Marketing), Y. Morizono (F&B Mgr), and J. Kannan for refining presentation slides before finalizing with the GM. This indicates D. Delacruz was an integral part of the F&B RevMAX preparation and discussion process, with his input explicitly requested by Forrester.",
+        "full_summary_ja": "2024年9月のこのスレッドは、F&B RevMAXプレゼンテーションスライドの準備と議論の協力的な準備を示しています。J. Kannan氏（収益）は、D. Delacruz氏にEDMs/オンラインチャレンジの入力を求める。S. Forrester氏は会議の議事録を共有し、進行状況を肯定的に評価し、その後、D. Delacruz氏、M. Silvestre氏（マーケティング）、Y. Morizono氏（F&Bマネージャー）、J. Kannan氏のプレゼンテーションスライドの改善のために具体的な入力を求める。これにより、D. Delacruz氏がF&B RevMAXの準備と議論の重要な一部であり、Forrester氏からの明示的な要求を示すことが示されます。",
         "potential_indicators_of_power_harassment": [
           "Historical Context/Contrast: Demonstrates D. Delacruz's active participation and required input in F&B RevMAX strategy discussions in Sep 2024, including specific requests for his marketing input from Forrester. This strongly contrasts with his exclusion from the same meeting in March 2025 (email33)."
         ],
@@ -4046,6 +4187,8 @@
       },
       {
         "evidence_type": "screenshot",
+        "title_en": "FB Managers Distribution List",
+        "title_ja": "F&Bマネージャー配信リスト",
         "evidence_file_title": "email48_2024-06-12_FBManagersDistributionList",
         "document_details": {
           "capture_date_approx": "Likely after June 12, 2024", 
@@ -4063,7 +4206,8 @@
              "date_sent": "Wednesday, June 12, 2024 6:36:25 PM"
            }
         },
-        "summary_for_lawyers": "This screenshot shows the membership of the internal 'Swissotel Nankai Osaka FB Managers' distribution list as of an unknown date (but likely after June 12, 2024, based on context email). It lists 12 members, explicitly including David Delacruz with the title 'F&B Marketing Coordinator' alongside various F&B managers and the Director (S. Forrester). This serves as evidence that D. Delacruz was officially part of this management group/communication channel.",
+        "full_summary": "This screenshot shows the membership of the internal 'Swissotel Nankai Osaka FB Managers' distribution list as of an unknown date (but likely after June 12, 2024, based on context email). It lists 12 members, explicitly including David Delacruz with the title 'F&B Marketing Coordinator' alongside various F&B managers and the Director (S. Forrester). This serves as evidence that D. Delacruz was officially part of this management group/communication channel.",
+        "full_summary_ja": "このスクリーンショットは、内部の「Swissotel Nankai Osaka F&Bマネージャー配信リスト」のメンバー構成を示しています。未知の日付（ただし、コンテキストメールに基づいて、2024年6月12日以降である可能性が高い）。12人のメンバーを列挙し、さまざまなF&Bマネージャーとディレクター（S. Forrester）と共に、D. Delacruz氏を「F&Bマーケティングコーディネーター」と明示的に含めます。これにより、D. Delacruz氏がこの管理グループ/コミュニケーションチャネルの正式なメンバーであることを証拠としています。",
         "potential_indicators_of_power_harassment": [
           "Historical Context/Contrast: Demonstrates D. Delacruz's inclusion in the F&B Managers group at some point. If he was later removed from this list or excluded from communications sent to it without justification, this document could support claims of targeted exclusion.",
           "Role Confirmation: Confirms D. Delacruz's title and inclusion within the F&B management communication structure."

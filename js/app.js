@@ -6,6 +6,7 @@ let currentView = 'timeline';
 let selectedDate = null;
 let calendarMonth = new Date().getMonth();
 let calendarYear = new Date().getFullYear();
+let currentIncident = null; // Added variable to keep track of the current incident
 
 // DOM elements
 const navLinks = document.querySelectorAll('.nav-link');
@@ -202,6 +203,12 @@ function updateLanguage() {
     } else if (currentView === 'timeline') {
         updateTimelineView();
     }
+    
+    // Update modal content if it's open
+    const modal = document.getElementById('incident-modal');
+    if (modal && modal.style.display === 'block' && currentIncident) {
+        showIncidentModal(currentIncident);
+    }
 }
 
 // Update timeline view
@@ -327,6 +334,19 @@ function updateTimelineView() {
             const descText = currentLanguage === 'en' ? incident.description.en : incident.description.ja;
             description.textContent = descText ? `${descText.substring(0, 150)}${descText.length > 150 ? '...' : ''}` : '';
             
+            // Add email summary if this is an email and we're in Japanese mode
+            if (currentLanguage === 'ja' && incident.original_evidence && 
+                incident.original_evidence.email_thread_details && 
+                incident.original_evidence.email_thread_details.conversation_flow && 
+                incident.original_evidence.email_thread_details.conversation_flow.length > 0) {
+                
+                const firstEmail = incident.original_evidence.email_thread_details.conversation_flow[0];
+                if (firstEmail.body_summary_JA) {
+                    // If we have a Japanese email body summary, use it instead of the description
+                    description.textContent = firstEmail.body_summary_JA.substring(0, 150) + (firstEmail.body_summary_JA.length > 150 ? '...' : '');
+                }
+            }
+            
             const viewButton = document.createElement('button');
             viewButton.className = 'view-incident-btn';
             viewButton.textContent = currentLanguage === 'en' ? 'View Details' : '詳細を見る';
@@ -357,6 +377,8 @@ function updateTimelineView() {
 
 // Show incident details in modal
 function showIncidentModal(incident) {
+    currentIncident = incident; // Store the current incident
+    
     const modal = document.getElementById('incident-modal');
     
     // Populate modal with incident details
@@ -383,19 +405,25 @@ function showIncidentModal(incident) {
     const originalEmailContainer = document.getElementById('original-email-container');
     const viewOriginalBtn = document.getElementById('view-original-btn');
     const viewOriginalText = document.getElementById('view-original-text');
+    const viewTranslatedBtn = document.getElementById('view-translated-btn');
+    const viewTranslatedText = document.getElementById('view-translated-text');
     
     if (incident.original_evidence && incident.original_evidence.evidence_file_title && 
         incident.original_evidence.evidence_file_title.startsWith('email')) {
-        // Show original email button
         originalEmailContainer.style.display = 'block';
-        viewOriginalText.textContent = translations[currentLanguage].viewOriginal || 'View Original Email';
+        viewOriginalText.textContent = translations[currentLanguage].viewOriginalEmail || 'View Original Email';
+        viewTranslatedText.textContent = translations[currentLanguage].viewBilingualEvidence || 'View Bilingual Evidence';
         
-        // Add click event for the button
+        // Add click event for the original email button
         viewOriginalBtn.onclick = function() {
             showPdfViewer(incident.original_evidence.evidence_file_title);
         };
+        
+        // Add click event for the bilingual evidence button
+        viewTranslatedBtn.onclick = function() {
+            showBilingualEvidence(incident);
+        };
     } else {
-        // Hide original email button
         originalEmailContainer.style.display = 'none';
     }
     
@@ -463,7 +491,7 @@ function showIncidentModal(incident) {
                             
                             const bodyDiv = document.createElement('div');
                             bodyDiv.className = 'email-body';
-                            bodyDiv.innerText = emailData.body;
+                            bodyDiv.innerText = currentLanguage === 'en' ? emailData.body : (emailData.body_JA || emailData.body);
                             
                             emailContent.appendChild(headerDiv);
                             emailContent.appendChild(bodyDiv);
@@ -514,7 +542,7 @@ function showIncidentModal(incident) {
         // Create the content container that will be collapsible
         const indicatorsContent = document.createElement('div');
         indicatorsContent.className = 'harassment-indicators';
-        // Initially hidden, but we'll still create and append the content
+        // Initially hidden
         indicatorsContent.style.display = 'none';
         
         // Add the indicators to the content container
@@ -537,16 +565,12 @@ function showIncidentModal(incident) {
         indicatorsContent.appendChild(indicatorsList);
         
         // Add click event to toggle display
-        indicatorsHeader.addEventListener('click', function() {
+        indicatorsHeader.onclick = function() {
             // Toggle display
-            if (indicatorsContent.style.display === 'none') {
-                indicatorsContent.style.display = 'block';
-                this.querySelector('i').className = 'fas fa-chevron-up';
-            } else {
-                indicatorsContent.style.display = 'none';
-                this.querySelector('i').className = 'fas fa-chevron-down';
-            }
-        });
+            const isHidden = indicatorsContent.style.display === 'none';
+            indicatorsContent.style.display = isHidden ? 'block' : 'none';
+            this.querySelector('i').className = isHidden ? 'fas fa-chevron-up' : 'fas fa-chevron-down';
+        };
         
         // Assemble the components
         indicatorsContainer.appendChild(indicatorsHeader);
@@ -571,6 +595,226 @@ function showIncidentModal(incident) {
             modal.style.display = 'none';
         }
     });
+}
+
+// Function to show bilingual evidence in a new window
+function showBilingualEvidence(incident) {
+    // Create a new window
+    const bilingualWindow = window.open('', '_blank', 'width=1000,height=800,scrollbars=yes');
+    
+    // Create the HTML content for the new window
+    let htmlContent = `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bilingual Evidence - ${incident.title.en}</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #f5f5f5;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                color: #333;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+            .evidence-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin-bottom: 30px;
+            }
+            .evidence-column {
+                flex: 1;
+                min-width: 300px;
+            }
+            .evidence-header {
+                background-color: #f0f0f0;
+                padding: 10px;
+                border-radius: 5px 5px 0 0;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .evidence-content {
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 0 0 5px 5px;
+                background-color: #fff;
+            }
+            .evidence-item {
+                margin-bottom: 20px;
+                border: 1px solid #eee;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .evidence-item-header {
+                background-color: #f8f8f8;
+                padding: 10px;
+                font-weight: bold;
+                border-bottom: 1px solid #eee;
+            }
+            .evidence-item-content {
+                padding: 15px;
+            }
+            .metadata {
+                margin-bottom: 20px;
+                padding: 10px;
+                background-color: #f8f8f8;
+                border-radius: 5px;
+            }
+            .metadata p {
+                margin: 5px 0;
+            }
+            @media print {
+                body {
+                    background-color: #fff;
+                }
+                .container {
+                    box-shadow: none;
+                    max-width: 100%;
+                }
+                .evidence-column {
+                    page-break-inside: avoid;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Bilingual Evidence: ${incident.title.en} / ${incident.title.ja}</h1>
+            
+            <div class="metadata">
+                <p><strong>Date:</strong> ${formatDate(incident.date)}</p>
+                <p><strong>Evidence Type:</strong> ${incident.category.en} / ${incident.category.ja}</p>
+            </div>
+    `;
+    
+    // Add summary section if available
+    if (incident.original_evidence && (incident.original_evidence.full_summary || incident.original_evidence.summary_for_lawyers)) {
+        htmlContent += `
+            <div class="evidence-container">
+                <div class="evidence-column">
+                    <div class="evidence-header">Summary (English)</div>
+                    <div class="evidence-content">${incident.original_evidence.full_summary || incident.original_evidence.summary_for_lawyers}</div>
+                </div>
+                <div class="evidence-column">
+                    <div class="evidence-header">Summary (Japanese)</div>
+                    <div class="evidence-content">${incident.original_evidence.full_summary_ja || 'No Japanese summary available'}</div>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Handle email evidence
+    if (incident.original_evidence && incident.original_evidence.evidence_type === 'email' && 
+        incident.original_evidence.email_thread_details && 
+        incident.original_evidence.email_thread_details.conversation_flow) {
+        
+        const emails = incident.original_evidence.email_thread_details.conversation_flow;
+        
+        htmlContent += `<h2>Email Thread</h2>`;
+        
+        emails.forEach((email, index) => {
+            htmlContent += `
+                <div class="evidence-item">
+                    <div class="evidence-item-header">
+                        Email ${index + 1}: ${email.subject}
+                    </div>
+                    <div class="evidence-container">
+                        <div class="evidence-column">
+                            <div class="evidence-header">English</div>
+                            <div class="evidence-item-content">
+                                <p><strong>From:</strong> ${email.sender}</p>
+                                <p><strong>To:</strong> ${email.recipients.join(', ')}</p>
+                                ${email.cc && email.cc.length > 0 ? `<p><strong>CC:</strong> ${email.cc.join(', ')}</p>` : ''}
+                                <p><strong>Date:</strong> ${email.date_sent}</p>
+                                <p><strong>Subject:</strong> ${email.subject}</p>
+                                <div style="white-space: pre-wrap; margin-top: 15px;">${email.body}</div>
+                            </div>
+                        </div>
+                        <div class="evidence-column">
+                            <div class="evidence-header">日本語</div>
+                            <div class="evidence-item-content">
+                                <p><strong>差出人:</strong> ${email.sender}</p>
+                                <p><strong>宛先:</strong> ${email.recipients.join(', ')}</p>
+                                ${email.cc && email.cc.length > 0 ? `<p><strong>CC:</strong> ${email.cc.join(', ')}</p>` : ''}
+                                <p><strong>日付:</strong> ${email.date_sent}</p>
+                                <p><strong>件名:</strong> ${email.subject}</p>
+                                <div style="white-space: pre-wrap; margin-top: 15px;">${email.body_JA || '翻訳なし'}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+    }
+    
+    // Handle meeting cancellation/postponement evidence
+    else if (incident.original_evidence && 
+            (incident.original_evidence.evidence_type === 'meeting_cancellation' || 
+             incident.original_evidence.evidence_type === 'meeting_postponement') && 
+            incident.original_evidence.meeting_details) {
+        
+        const meeting = incident.original_evidence.meeting_details;
+        
+        htmlContent += `
+            <div class="evidence-item">
+                <div class="evidence-item-header">
+                    Meeting Details: ${meeting.subject}
+                </div>
+                <div class="evidence-container">
+                    <div class="evidence-column">
+                        <div class="evidence-header">English</div>
+                        <div class="evidence-item-content">
+                            <p><strong>Subject:</strong> ${meeting.subject}</p>
+                            <p><strong>Organizer:</strong> ${meeting.organizer.name} (${meeting.organizer.email})</p>
+                            <p><strong>Original Time:</strong> ${meeting.original_time}</p>
+                            <p><strong>Location:</strong> ${meeting.location}</p>
+                            ${meeting.recurrence ? `<p><strong>Recurrence:</strong> ${meeting.recurrence}</p>` : ''}
+                            ${meeting.cancellation_sent_date ? `<p><strong>Cancellation Sent:</strong> ${meeting.cancellation_sent_date}</p>` : ''}
+                            ${meeting.postponement_sent_date ? `<p><strong>Postponement Sent:</strong> ${meeting.postponement_sent_date}</p>` : ''}
+                        </div>
+                    </div>
+                    <div class="evidence-column">
+                        <div class="evidence-header">日本語</div>
+                        <div class="evidence-item-content">
+                            <p><strong>件名:</strong> ${meeting.subject}</p>
+                            <p><strong>主催者:</strong> ${meeting.organizer.name} (${meeting.organizer.email})</p>
+                            <p><strong>元の時間:</strong> ${meeting.original_time}</p>
+                            <p><strong>場所:</strong> ${meeting.location}</p>
+                            ${meeting.recurrence ? `<p><strong>繰り返し:</strong> ${meeting.recurrence}</p>` : ''}
+                            ${meeting.cancellation_sent_date ? `<p><strong>キャンセル送信日:</strong> ${meeting.cancellation_sent_date}</p>` : ''}
+                            ${meeting.postponement_sent_date ? `<p><strong>延期送信日:</strong> ${meeting.postponement_sent_date}</p>` : ''}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    // Close the HTML
+    htmlContent += `
+        </div>
+    </body>
+    </html>
+    `;
+    
+    // Write the HTML to the new window
+    bilingualWindow.document.write(htmlContent);
+    bilingualWindow.document.close();
 }
 
 // Function to show PDF viewer
@@ -854,15 +1098,19 @@ function processEvidenceData(evidenceItems) {
         // Generate a unique ID based on the filename if none exists
         const id = item.id || item.evidence_file_title || `evidence_${Date.now()}`;
         
-        // Create title from evidence_file_title (remove prefix like "email01_")
+        // Use the new field names "full_summary" and "full_summary_ja" while maintaining backward compatibility with "summary_for_lawyers"
         let title = {
-            en: item.evidence_file_title?.replace(/^(email|document|audio|video|image)\d+_\d{4}-\d{2}-\d{2}_/, "") || 'Untitled Evidence',
-            ja: item.evidence_file_title?.replace(/^(email|document|audio|video|image)\d+_\d{4}-\d{2}-\d{2}_/, "") || '無題の証拠'
+            en: item.title_en || item.evidence_file_title?.replace(/^(email|document|audio|video|image)\d+_\d{4}-\d{2}-\d{2}_/, "") || 'Untitled Evidence',
+            ja: item.title_ja || item.evidence_file_title?.replace(/^(email|document|audio|video|image)\d+_\d{4}-\d{2}-\d{2}_/, "") || '無題の証拠'
         };
         
-        // Format title - replace camelCase with spaces and capitalize first letter of each word
-        title.en = title.en.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
-        title.ja = title.ja; // Keep Japanese as is or implement Japanese formatting if needed
+        // Format title only if we're using the generated title (not the explicit title_en/title_ja)
+        if (!item.title_en) {
+            title.en = title.en.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+        }
+        if (!item.title_ja) {
+            title.ja = title.ja; // Keep Japanese as is or implement Japanese formatting if needed
+        }
         
         // Determine category
         let category = {
@@ -872,8 +1120,8 @@ function processEvidenceData(evidenceItems) {
         
         // Create description
         let description = {
-            en: item.summary_for_lawyers || '',
-            ja: '' // We would need translation for this
+            en: item.full_summary || item.summary_for_lawyers || '',
+            ja: item.full_summary_ja || ''
         };
         
         // Create evidence array based on the key quotes and context
