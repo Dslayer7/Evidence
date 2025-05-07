@@ -610,6 +610,7 @@ function showBilingualEvidence(incident) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bilingual Evidence - ${incident.title.en}</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -659,6 +660,8 @@ function showBilingualEvidence(incident) {
                 border: 1px solid #eee;
                 border-radius: 5px;
                 overflow: hidden;
+                page-break-inside: avoid;
+                break-inside: avoid;
             }
             .evidence-item-header {
                 background-color: #f8f8f8;
@@ -678,6 +681,26 @@ function showBilingualEvidence(incident) {
             .metadata p {
                 margin: 5px 0;
             }
+            .save-pdf-btn {
+                display: inline-block;
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+                margin-bottom: 20px;
+            }
+            .save-pdf-btn:hover {
+                background-color: #45a049;
+            }
+            .btn-container {
+                text-align: right;
+                margin-bottom: 20px;
+            }
             @media print {
                 body {
                     background-color: #fff;
@@ -688,12 +711,35 @@ function showBilingualEvidence(incident) {
                 }
                 .evidence-column {
                     page-break-inside: avoid;
+                    break-inside: avoid;
+                }
+                .evidence-container {
+                    page-break-inside: avoid;
+                    break-inside: avoid;
+                }
+                .evidence-item {
+                    page-break-inside: avoid;
+                    break-inside: avoid;
+                }
+                .evidence-item-content {
+                    page-break-inside: avoid;
+                    break-inside: avoid;
+                }
+                h1, h2, h3 {
+                    page-break-after: avoid;
+                    break-after: avoid;
+                }
+                .save-pdf-btn, .btn-container {
+                    display: none;
                 }
             }
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="content-to-pdf">
+            <div class="btn-container">
+                <button class="save-pdf-btn" id="save-as-pdf">Save as PDF</button>
+            </div>
             <h1>Bilingual Evidence: ${incident.title.en} / ${incident.title.ja}</h1>
             
             <div class="metadata">
@@ -808,6 +854,47 @@ function showBilingualEvidence(incident) {
     // Close the HTML
     htmlContent += `
         </div>
+        <script>
+            document.getElementById('save-as-pdf').addEventListener('click', function() {
+                // Hide the button temporarily for PDF generation
+                this.style.display = 'none';
+                
+                const element = document.getElementById('content-to-pdf');
+                const filename = 'bilingual-evidence-${incident.date}-${incident.title.en.replace(/[^a-z0-9]/gi, '-').toLowerCase()}.pdf';
+                
+                const opt = {
+                    margin: [15, 10, 15, 10],  // [top, right, bottom, left] margins
+                    filename: filename,
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 2, useCORS: true, logging: false },
+                    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+                };
+                
+                // Generate PDF
+                html2pdf()
+                    .set(opt)
+                    .from(element)
+                    .toPdf()
+                    .get('pdf')
+                    .then((pdf) => {
+                        // Add page numbers
+                        const totalPages = pdf.internal.getNumberOfPages();
+                        for (let i = 1; i <= totalPages; i++) {
+                            pdf.setPage(i);
+                            pdf.setFontSize(10);
+                            pdf.setTextColor(100);
+                            pdf.text('Page ' + i + ' of ' + totalPages, pdf.internal.pageSize.getWidth() - 30, pdf.internal.pageSize.getHeight() - 10);
+                        }
+                        return pdf;
+                    })
+                    .save()
+                    .then(() => {
+                        // Show the button again after PDF is generated
+                        this.style.display = 'inline-block';
+                    });
+            });
+        </script>
     </body>
     </html>
     `;
