@@ -1,0 +1,171 @@
+/* Audio Evidence Styles */
+.audio-evidence-container {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.audio-play-button {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+}
+
+.audio-play-button:hover {
+    background-color: #3a5a8c;
+}
+
+.audio-info {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.transcript-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.transcript-content {
+    font-size: 14px;
+}
+
+.transcript-line {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.transcript-speaker {
+    font-weight: bold;
+    color: #4a6fa5;
+}
+
+.transcript-timestamp {
+    color: #888;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.transcript-text {
+    color: #333;
+}
+
+.transcript-text-ja {
+    color: #333;
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+}
+
+/* Transcript header styles */
+.transcript-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.transcript-title {
+    margin: 0;
+    padding: 0;
+}
+
+.download-pdf-btn {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s;
+}
+
+.download-pdf-btn:hover {
+    background-color: #3a5a8c;
+}
+
+.download-pdf-btn i {
+    font-size: 14px;
+}
+
+/* Bilingual transcript table styles */
+.bilingual-transcript-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.bilingual-transcript-table th {
+    background-color: #e0e0e0;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+}
+
+.bilingual-transcript-table td {
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+}
+
+.bilingual-transcript-table .transcript-speaker-header {
+    width: 15%;
+}
+
+.bilingual-transcript-table .transcript-timestamp-header {
+    width: 10%;
+}
+
+.bilingual-transcript-table .transcript-text-header {
+    width: 37.5%;
+}
+
+.bilingual-transcript-table tr:hover {
+    background-color: #f0f0f0;
+}
+
+.bilingual-transcript-table .transcript-timestamp {
+    color: #4a6fa5;
+    cursor: pointer;
+}
+
+.bilingual-transcript-table .transcript-timestamp:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .audio-evidence-container {
+        padding: 8px;
+    }
+    
+    .audio-play-button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    
+    .transcript-container {
+        max-height: 200px;
+    }
+}

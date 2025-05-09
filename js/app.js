@@ -399,7 +399,7 @@ function showIncidentModal(incident) {
     document.getElementById('time-label').textContent = translations[currentLanguage].time || 'Time:';
     document.getElementById('category-label').textContent = translations[currentLanguage].category || 'Category:';
     document.getElementById('description-label').textContent = translations[currentLanguage].description || 'Description:';
-    document.getElementById('key-quotes-label').textContent = translations[currentLanguage].keyQuotes || 'Key-quotes:';
+    document.getElementById('key-quotes-label').textContent = translations[currentLanguage].keyQuotes || 'Files:';
     
     // Display or hide the original email button based on evidence type
     const originalEmailContainer = document.getElementById('original-email-container');
@@ -408,9 +408,336 @@ function showIncidentModal(incident) {
     const viewTranslatedBtn = document.getElementById('view-translated-btn');
     const viewTranslatedText = document.getElementById('view-translated-text');
     
-    if (incident.original_evidence && incident.original_evidence.evidence_file_title && 
-        incident.original_evidence.evidence_file_title.startsWith('email')) {
+    // Remove any existing audio player if present
+    const existingAudioContainer = document.getElementById('modal-audio-container');
+    if (existingAudioContainer) {
+        existingAudioContainer.remove();
+    }
+    
+    // Handle audio evidence if present
+    if (incident.original_evidence && incident.original_evidence.evidence_type === 'audio_recording' && 
+        incident.original_evidence.audio_file_path) {
+        // Show the original email container but repurpose it for audio
         originalEmailContainer.style.display = 'block';
+        
+        // Create audio container
+        const audioContainer = document.createElement('div');
+        audioContainer.id = 'modal-audio-container';
+        audioContainer.className = 'audio-evidence-container';
+        
+        // Create audio player
+        const audioPlayer = document.createElement('audio');
+        audioPlayer.controls = true;
+        audioPlayer.src = incident.original_evidence.audio_file_path;
+        audioPlayer.style.width = '100%';
+        
+        // Add info about the recording
+        let infoText = '';
+        if (incident.original_evidence.recording_details) {
+            const details = incident.original_evidence.recording_details;
+            if (details.duration) {
+                infoText += currentLanguage === 'en' ? 
+                    `Duration: ${details.duration}` : 
+                    `時間: ${details.duration}`;
+            }
+            if (details.incident_start) {
+                infoText += infoText ? ' | ' : '';
+                infoText += currentLanguage === 'en' ? 
+                    `Incident starts at: ${details.incident_start}` : 
+                    `事件開始時間: ${details.incident_start}`;
+            }
+        }
+        
+        const audioInfo = document.createElement('div');
+        audioInfo.className = 'audio-info';
+        audioInfo.textContent = infoText;
+        
+        // Add transcript if available
+        if (incident.original_evidence.transcript && incident.original_evidence.transcript.length > 0) {
+            const transcriptContainer = document.createElement('div');
+            transcriptContainer.className = 'transcript-container';
+            
+            // Create header container to hold title and download button
+            const headerContainer = document.createElement('div');
+            headerContainer.className = 'transcript-header-container';
+            
+            const transcriptHeader = document.createElement('h4');
+            transcriptHeader.textContent = 'Transcript / 文字起こし';
+            transcriptHeader.className = 'transcript-title';
+            
+            // Create download PDF button
+            const downloadPdfBtn = document.createElement('button');
+            downloadPdfBtn.className = 'download-pdf-btn';
+            downloadPdfBtn.innerHTML = '<i class="fas fa-file-pdf"></i> Download PDF';
+            downloadPdfBtn.title = 'Download transcript as PDF';
+            
+            // Add event listener to download PDF
+            downloadPdfBtn.addEventListener('click', () => {
+                // Create a new window for the PDF content
+                const printWindow = window.open('', '_blank', 'width=800,height=600');
+                
+                // Create the HTML content for the PDF
+                let htmlContent = `
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Audio Transcript - ${incident.title.en}</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            margin: 0;
+                            padding: 20px;
+                            background-color: #fff;
+                        }
+                        .container {
+                            max-width: 800px;
+                            margin: 0 auto;
+                        }
+                        h1 {
+                            color: #333;
+                            border-bottom: 1px solid #ddd;
+                            padding-bottom: 10px;
+                        }
+                        .info {
+                            margin-bottom: 20px;
+                            color: #666;
+                        }
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            margin-top: 20px;
+                        }
+                        th, td {
+                            padding: 8px;
+                            border: 1px solid #ddd;
+                            text-align: left;
+                            vertical-align: top;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                            font-weight: bold;
+                        }
+                        tr:nth-child(even) {
+                            background-color: #f9f9f9;
+                        }
+                        .transcript-speaker {
+                            font-weight: bold;
+                        }
+                        .transcript-timestamp {
+                            color: #666;
+                            white-space: nowrap;
+                        }
+                        .footer {
+                            margin-top: 30px;
+                            text-align: center;
+                            font-size: 12px;
+                            color: #999;
+                        }
+                        @media print {
+                            body {
+                                padding: 0;
+                                background: none;
+                            }
+                            .container {
+                                max-width: 100%;
+                            }
+                            .no-print {
+                                display: none;
+                            }
+                        }
+                    </style>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+                </head>
+                <body>
+                    <div class="container" id="pdf-content">
+                        <h1>${incident.title.en}</h1>
+                        <div class="info">
+                            <p><strong>Date:</strong> ${formatDate(incident.date)}</p>
+                            <p><strong>Time:</strong> ${incident.time || 'Not specified'}</p>
+                            <p><strong>Duration:</strong> ${incident.original_evidence.recording_details?.duration || 'Unknown'}</p>
+                        </div>
+                        <h2>Audio Transcript / 音声文字起こし</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Speaker</th>
+                                    <th>Time</th>
+                                    <th>English</th>
+                                    <th>日本語</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+                
+                // Add each line of the transcript
+                incident.original_evidence.transcript.forEach(line => {
+                    htmlContent += `
+                                <tr>
+                                    <td class="transcript-speaker">${line.speaker}</td>
+                                    <td class="transcript-timestamp">${line.timestamp}</td>
+                                    <td>${line.text || ''}</td>
+                                    <td>${line.text_ja || ''}</td>
+                                </tr>
+                    `;
+                });
+                
+                // Close the table and add footer
+                htmlContent += `
+                            </tbody>
+                        </table>
+                        <div class="footer">
+                            <p>Generated on ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()}</p>
+                        </div>
+                    </div>
+                    <div class="no-print" style="text-align: center; margin-top: 20px;">
+                        <button id="download-btn" style="padding: 10px 20px; background-color: #4a6fa5; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                    </div>
+                    <script>
+                        document.getElementById('download-btn').addEventListener('click', function() {
+                            const element = document.getElementById('pdf-content');
+                            const opt = {
+                                margin: [10, 10, 10, 10],
+                                filename: '${incident.title.en.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_transcript.pdf',
+                                image: { type: 'jpeg', quality: 0.98 },
+                                html2canvas: { scale: 2 },
+                                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                            };
+                            
+                            html2pdf().set(opt).from(element).save();
+                        });
+                        
+                        // Auto-trigger download after 1 second
+                        setTimeout(function() {
+                            document.getElementById('download-btn').click();
+                        }, 1000);
+                    </script>
+                </body>
+                </html>
+                `;
+                
+                // Write the HTML content to the new window
+                printWindow.document.open();
+                printWindow.document.write(htmlContent);
+                printWindow.document.close();
+            });
+            
+            // Add header and button to container
+            headerContainer.appendChild(transcriptHeader);
+            headerContainer.appendChild(downloadPdfBtn);
+            transcriptContainer.appendChild(headerContainer);
+            
+            // Create bilingual transcript table
+            const transcriptTable = document.createElement('table');
+            transcriptTable.className = 'bilingual-transcript-table';
+            
+            // Create table header
+            const tableHeader = document.createElement('thead');
+            const headerRow = document.createElement('tr');
+            
+            const speakerHeader = document.createElement('th');
+            speakerHeader.textContent = 'Speaker';
+            speakerHeader.className = 'transcript-speaker-header';
+            
+            const timestampHeader = document.createElement('th');
+            timestampHeader.textContent = 'Time';
+            timestampHeader.className = 'transcript-timestamp-header';
+            
+            const englishHeader = document.createElement('th');
+            englishHeader.textContent = 'English';
+            englishHeader.className = 'transcript-text-header';
+            
+            const japaneseHeader = document.createElement('th');
+            japaneseHeader.textContent = '日本語';
+            japaneseHeader.className = 'transcript-text-header';
+            
+            headerRow.appendChild(speakerHeader);
+            headerRow.appendChild(timestampHeader);
+            headerRow.appendChild(englishHeader);
+            headerRow.appendChild(japaneseHeader);
+            tableHeader.appendChild(headerRow);
+            transcriptTable.appendChild(tableHeader);
+            
+            // Create table body
+            const tableBody = document.createElement('tbody');
+            
+            incident.original_evidence.transcript.forEach(line => {
+                const row = document.createElement('tr');
+                row.className = 'transcript-row';
+                
+                // Speaker cell
+                const speakerCell = document.createElement('td');
+                speakerCell.className = 'transcript-speaker';
+                speakerCell.textContent = line.speaker;
+                
+                // Timestamp cell
+                const timestampCell = document.createElement('td');
+                timestampCell.className = 'transcript-timestamp';
+                timestampCell.textContent = line.timestamp;
+                
+                // Make timestamp clickable to jump to that point in the audio
+                timestampCell.style.cursor = 'pointer';
+                timestampCell.addEventListener('click', () => {
+                    // Parse the timestamp (format: MM:SS.mmm)
+                    const timeParts = line.timestamp.split(':');
+                    if (timeParts.length === 2) {
+                        const minutes = parseInt(timeParts[0], 10);
+                        const seconds = parseFloat(timeParts[1]);
+                        const totalSeconds = minutes * 60 + seconds;
+                        
+                        // Set the audio player's current time
+                        audioPlayer.currentTime = totalSeconds;
+                        
+                        // Start playing from that point
+                        audioPlayer.play();
+                    }
+                });
+                
+                // English text cell
+                const englishCell = document.createElement('td');
+                englishCell.className = 'transcript-text';
+                englishCell.textContent = line.text || '';
+                
+                // Japanese text cell
+                const japaneseCell = document.createElement('td');
+                japaneseCell.className = 'transcript-text-ja';
+                japaneseCell.textContent = line.text_ja || '';
+                
+                row.appendChild(speakerCell);
+                row.appendChild(timestampCell);
+                row.appendChild(englishCell);
+                row.appendChild(japaneseCell);
+                tableBody.appendChild(row);
+            });
+            
+            transcriptTable.appendChild(tableBody);
+            transcriptContainer.appendChild(transcriptTable);
+            
+            audioContainer.appendChild(audioInfo);
+            audioContainer.appendChild(audioPlayer);
+            audioContainer.appendChild(transcriptContainer);
+        } else {
+            // No transcript, just add the player
+            audioContainer.appendChild(audioInfo);
+            audioContainer.appendChild(audioPlayer);
+        }
+        
+        // Add the audio container to the modal before the evidence container
+        const evidenceContainer = document.querySelector('.evidence-container');
+        evidenceContainer.parentNode.insertBefore(audioContainer, evidenceContainer);
+        
+        // Hide the original email buttons since we're showing audio
+        viewOriginalBtn.style.display = 'none';
+        viewTranslatedBtn.style.display = 'none';
+    } else if (incident.original_evidence && incident.original_evidence.evidence_file_title && 
+        incident.original_evidence.evidence_file_title.startsWith('email')) {
+        // Original email handling
+        originalEmailContainer.style.display = 'block';
+        viewOriginalBtn.style.display = 'inline-block';
+        viewTranslatedBtn.style.display = 'inline-block';
         viewOriginalText.textContent = translations[currentLanguage].viewOriginalEmail || 'View Original Email';
         viewTranslatedText.textContent = translations[currentLanguage].viewBilingualEvidence || 'View Bilingual Evidence';
         
@@ -463,8 +790,111 @@ function showIncidentModal(incident) {
                 span.textContent = currentLanguage === 'en' ? item.description.en : item.description.ja;
                 li.appendChild(span);
                 
+                // Handle audio evidence
+                if (item.type === 'audio' && item.url) {
+                    const audioContainer = document.createElement('div');
+                    audioContainer.className = 'audio-evidence-container';
+                    
+                    // Create audio player
+                    const audioPlayer = document.createElement('audio');
+                    audioPlayer.controls = true;
+                    audioPlayer.src = item.url;
+                    
+                    // Create play button for better UX
+                    const playButton = document.createElement('button');
+                    playButton.className = 'audio-play-button';
+                    playButton.innerHTML = '<i class="fas fa-play"></i> ' + 
+                        (currentLanguage === 'en' ? 'Play Audio' : '音声を再生');
+                    
+                    // Add information about the recording
+                    const audioInfo = document.createElement('div');
+                    audioInfo.className = 'audio-info';
+                    
+                    let infoText = '';
+                    if (item.duration) {
+                        infoText += currentLanguage === 'en' ? 
+                            `Duration: ${item.duration}` : 
+                            `時間: ${item.duration}`;
+                    }
+                    if (item.incident_start) {
+                        infoText += infoText ? ' | ' : '';
+                        infoText += currentLanguage === 'en' ? 
+                            `Incident starts at: ${item.incident_start}` : 
+                            `事件開始時間: ${item.incident_start}`;
+                    }
+                    
+                    audioInfo.textContent = infoText;
+                    
+                    // Add event listener to play button
+                    playButton.addEventListener('click', () => {
+                        if (audioPlayer.paused) {
+                            audioPlayer.play();
+                            playButton.innerHTML = '<i class="fas fa-pause"></i> ' + 
+                                (currentLanguage === 'en' ? 'Pause' : '一時停止');
+                        } else {
+                            audioPlayer.pause();
+                            playButton.innerHTML = '<i class="fas fa-play"></i> ' + 
+                                (currentLanguage === 'en' ? 'Play Audio' : '音声を再生');
+                        }
+                    });
+                    
+                    // Add event listener for when audio ends
+                    audioPlayer.addEventListener('ended', () => {
+                        playButton.innerHTML = '<i class="fas fa-play"></i> ' + 
+                            (currentLanguage === 'en' ? 'Play Audio' : '音声を再生');
+                    });
+                    
+                    // Append elements to container
+                    audioContainer.appendChild(playButton);
+                    audioContainer.appendChild(audioInfo);
+                    audioContainer.appendChild(audioPlayer);
+                    li.appendChild(audioContainer);
+                }
+                // If it's a transcript
+                else if (item.type === 'transcript' && item.transcript) {
+                    const transcriptContainer = document.createElement('div');
+                    transcriptContainer.className = 'transcript-container';
+                    transcriptContainer.style.display = 'none'; // Initially hidden
+                    
+                    // Create transcript content
+                    const transcriptContent = document.createElement('div');
+                    transcriptContent.className = 'transcript-content';
+                    
+                    // Add each line of the transcript
+                    item.transcript.forEach(line => {
+                        const transcriptLine = document.createElement('div');
+                        transcriptLine.className = 'transcript-line';
+                        
+                        const speaker = document.createElement('span');
+                        speaker.className = 'transcript-speaker';
+                        speaker.textContent = line.speaker + ': ';
+                        
+                        const timestamp = document.createElement('span');
+                        timestamp.className = 'transcript-timestamp';
+                        timestamp.textContent = '[' + line.timestamp + '] ';
+                        
+                        const text = document.createElement('span');
+                        text.className = 'transcript-text';
+                        text.textContent = currentLanguage === 'en' ? line.text : line.text_ja;
+                        
+                        transcriptLine.appendChild(speaker);
+                        transcriptLine.appendChild(timestamp);
+                        transcriptLine.appendChild(text);
+                        transcriptContent.appendChild(transcriptLine);
+                    });
+                    
+                    transcriptContainer.appendChild(transcriptContent);
+                    li.appendChild(transcriptContainer);
+                    
+                    // Make the item clickable to expand/collapse
+                    span.style.cursor = 'pointer';
+                    span.addEventListener('click', () => {
+                        transcriptContainer.style.display = 
+                            transcriptContainer.style.display === 'none' ? 'block' : 'none';
+                    });
+                }
                 // If it's an internal reference to an email
-                if (item.url && item.url.startsWith('#') && item.url.includes('_email_')) {
+                else if (item.url && item.url.startsWith('#') && item.url.includes('_email_')) {
                     const detailsContainer = document.createElement('div');
                     detailsContainer.className = 'evidence-details';
                     
@@ -958,6 +1388,8 @@ function showPdfViewer(filename) {
 
 // Format date based on current language
 function formatDate(dateStr) {
+    if (!dateStr) return '';
+    
     const date = new Date(dateStr);
     return date.toLocaleDateString(
         currentLanguage === 'en' ? 'en-US' : 'ja-JP',
@@ -968,16 +1400,22 @@ function formatDate(dateStr) {
 // Get icon class based on evidence type
 function getEvidenceIconClass(type) {
     switch (type) {
-        case 'image':
-            return 'fas fa-image';
+        case 'email':
+            return 'fas fa-envelope';
         case 'document':
             return 'fas fa-file-alt';
-        case 'audio':
-            return 'fas fa-microphone';
+        case 'image':
+            return 'fas fa-image';
         case 'video':
             return 'fas fa-video';
+        case 'audio':
+            return 'fas fa-volume-up';
+        case 'text':
+            return 'fas fa-quote-left';
+        case 'transcript':
+            return 'fas fa-file-alt';
         default:
-            return 'fas fa-link';
+            return 'fas fa-file';
     }
 }
 
@@ -1121,8 +1559,9 @@ function showView(view) {
     }
 }
 
-// Load incidents data from JSON file
+// Load incidents data from JSON files
 function loadIncidents() {
+    // First load the main evidence data
     return fetch('evidence.json')
         .then(response => {
             if (!response.ok) {
@@ -1133,29 +1572,47 @@ function loadIncidents() {
         .then(data => {
             // Process the evidence data into a structure for display
             incidents = processEvidenceData(data.incidents || []);
+            
+            // Now load the audio evidence data
+            return fetch('audio_evidence.json');
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok for audio evidence');
+            }
+            return response.json();
+        })
+        .then(audioData => {
+            // Process the audio evidence data and add it to the incidents array
+            const audioIncidents = processEvidenceData(audioData.audio_incidents || []);
+            incidents = [...incidents, ...audioIncidents];
             filteredIncidents = [...incidents];
             return incidents;
         })
         .catch(error => {
             console.error('Error loading incidents data:', error);
-            // Initialize with empty array if fetch fails
-            incidents = [];
-            filteredIncidents = [];
-            return [];
+            // If we already have incidents from the first fetch, keep them
+            if (!incidents.length) {
+                incidents = [];
+                filteredIncidents = [];
+            }
+            return incidents;
         });
 }
 
 // Process evidence data into a format suitable for display
 function processEvidenceData(evidenceItems) {
     return evidenceItems.map(item => {
-        // Extract date from evidence file title if not explicitly provided
+        // Extract date and time from the evidence
         let date = '';
         let time = '';
         
-        // Try to extract date from evidence_file_title
-        const dateMatch = item.evidence_file_title?.match(/(\d{4}-\d{2}-\d{2})/);
-        if (dateMatch) {
-            date = dateMatch[1];
+        // Try to extract date from the evidence file title
+        if (item.evidence_file_title) {
+            const dateMatch = item.evidence_file_title.match(/\d{4}-\d{2}-\d{2}/);
+            if (dateMatch) {
+                date = dateMatch[0];
+            }
         }
         
         // For email evidence, get date from first email in thread
@@ -1179,6 +1636,16 @@ function processEvidenceData(evidenceItems) {
                         date = parts[0];
                     }
                 }
+            }
+        }
+        
+        // For audio evidence, get date and time from recording details
+        if (item.evidence_type === 'audio_recording' && item.recording_details) {
+            if (item.recording_details.date_recorded) {
+                date = item.recording_details.date_recorded;
+            }
+            if (item.recording_details.time_recorded) {
+                time = item.recording_details.time_recorded;
             }
         }
         
@@ -1207,24 +1674,15 @@ function processEvidenceData(evidenceItems) {
         
         // Create description
         let description = {
-            en: item.full_summary || item.summary_for_lawyers || '',
-            ja: item.full_summary_ja || ''
+            en: item.full_summary || item.summary_for_lawyers || item.conversation_summary || '',
+            ja: item.full_summary_ja || item.conversation_summary_ja || ''
         };
         
         // Create evidence array based on the key quotes and context
         let evidence = [];
         
-        // Add key quotes as evidence items
-        if (item.key_quotes && item.key_quotes.length > 0) {
-            evidence.push({
-                type: 'text',
-                url: '',
-                description: {
-                    en: 'Key quotes: ' + item.key_quotes.join('; '),
-                    ja: '主要な引用: ' + item.key_quotes.join('; ')
-                }
-            });
-        }
+        // We're no longer displaying key quotes as they don't provide additional help
+        // Keeping this comment as a placeholder in case we need to restore this functionality
         
         // Process email thread if it exists
         if (item.evidence_type === 'email' && item.email_thread_details?.conversation_flow) {
@@ -1238,6 +1696,22 @@ function processEvidenceData(evidenceItems) {
                     }
                 });
             });
+        }
+        
+        // Process audio evidence if it exists
+        if (item.evidence_type === 'audio_recording' && item.audio_file_path) {
+            evidence.push({
+                type: 'audio',
+                url: item.audio_file_path,
+                description: {
+                    en: `Audio Recording (${item.recording_details?.duration || 'Unknown duration'})`,
+                    ja: `音声記録 (${item.recording_details?.duration || '不明な時間'})`
+                },
+                duration: item.recording_details?.duration || '',
+                incident_start: item.recording_details?.incident_start || ''
+            });
+            
+            // We'll display the transcript directly in the modal, so we don't need to add it as a separate evidence item
         }
         
         return {

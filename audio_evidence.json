@@ -1,0 +1,368 @@
+{
+  "audio_incidents": [
+    {
+      "evidence_type": "audio_recording",
+      "title_en": "Steve Kicking Me Out of an event",
+      "title_ja": "イベントから追い出される",
+      "evidence_file_title": "audio01_2025-04-21_SteveKickingMeOut",
+      "audio_file_path": "audio_evidence/Steve kicking me out.m4a",
+      "recording_details": {
+        "date_recorded": "2025-04-21",
+        "time_recorded": "18:20",
+        "duration": "3:22",
+        "incident_start": "1:58",
+        "location": "Table36",
+        "recording_device": "Android phone"
+      },
+      "participants": [
+        {"name": "Steven FORRESTER", "position": "Director of F&B"},
+        {"name": "David DELACRUZ", "position": "F&B Marketing Coordinator"}
+      ],
+      "conversation_summary": "Steven Forrester (Steve) tells David Delacruz (David) that he must leave an event. Steve states that David's workday is over, he is not invited to the party as he is not part of the executive committee (Excom) or a Head of Department (HOD), and his overtime for staying is not approved. David questions Steve's directive, mentioning that Shane (implied to be the General Manager) hasn't said anything and that ultimately they all report to Shane. Steve becomes increasingly insistent, asserting his direct authority over David and telling him not to be a \"smartass\". David eventually concedes he will go home but says he will first say goodbye to Shane, to which Steve, after initial resistance, agrees.",
+      "conversation_summary_ja": "スティーブン・フォレスター（スティーブ）は、デビッド・デラクルーズ（デビッド）に対し、イベントから退出するよう告げます。スティーブは、デビッドの勤務時間は終了しており、執行委員会（Excom）のメンバーでも部門長（HOD）でもないためパーティーには招待されておらず、滞在に対する残業も承認されないと述べます。デビッドは、シェーン（総支配人と示唆される）からは何も言われていないこと、最終的には全員がシェーンの部下であることなどを挙げてスティーブの指示に疑問を呈します。スティーブはますます強硬になり、デビッドに対する直接の権限を主張し、「生意気な口をきくな」と告げます。デビッドは最終的に帰宅することに同意しますが、まずシェーンに挨拶をすると述べ、スティーブは当初抵抗したものの、それに同意します。",
+      "transcript": [
+        {
+          "speaker": "Steve",
+          "timestamp": "01:59.000",
+          "text": "Pretty much. Time to head off. Function started, let's go.",
+          "text_ja": "まあそんなところだ。もう行かないと。イベントが始まったから、行こう。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:02.720",
+          "text": "What?",
+          "text_ja": "何ですか？"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:03.640",
+          "text": "Function started, time to head off.",
+          "text_ja": "イベントが始まったから、行かないと。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:06.320",
+          "text": "Yeah, wait, I'm going to make sure that everything's okay.",
+          "text_ja": "ええ、待ってください、全て問題ないか確認します。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:08.560",
+          "text": "Everything's okay. Thank you.",
+          "text_ja": "全て問題ない。ありがとう。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:10.980",
+          "text": "Yeah?",
+          "text_ja": "はい？"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:11.480",
+          "text": "Finish at 5.30.",
+          "text_ja": "5時半に終わるんだ。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:12.940",
+          "text": "But I can still stay?",
+          "text_ja": "でも、まだいてもいいですか？"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:14.200",
+          "text": "No, you can't. You need to go home.",
+          "text_ja": "いや、だめだ。帰りなさい。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:15.720",
+          "text": "Why?",
+          "text_ja": "なぜ？"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:15.960",
+          "text": "You're not invited to the party.",
+          "text_ja": "君はこのパーティーに招待されていない。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:17.540",
+          "text": "Shane didn't say anything about it.",
+          "text_ja": "シェーンはそれについて何も言っていませんでした。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:19.480",
+          "text": "I'm saying you're not invited, you're not Excom, you're not HOD. You need to leave.",
+          "text_ja": "君は招待されていないと言っているんだ。君は実行委員でも部門長でもない。出て行くんだ。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:23.700",
+          "text": "Yeah, I'm working.",
+          "text_ja": "ええ、仕事中です。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:24.720",
+          "text": "You're not working.",
+          "text_ja": "君は仕事をしていないだろう。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:25.880",
+          "text": "Okay, if Shane tells me, it's okay.",
+          "text_ja": "分かりました、シェーンがそう言うなら大丈夫です。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:28.520",
+          "text": "You work for me, go home.",
+          "text_ja": "君は私の部下だ。帰りなさい。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:31.440",
+          "text": "You don't work for Shane.",
+          "text_ja": "君はシェーンの部下ではない。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:33.340",
+          "text": "Wait, don't we all work for Shane because he's the General Manager?",
+          "text_ja": "待ってください、彼は総支配人だから、私たちは皆シェーンのために働いているのではありませんか？"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:36.140",
+          "text": "You work for me. Don't be a smartass. I'm asking you now.",
+          "text_ja": "君は私の部下だ。生意気なことを言うな。今、言っているだろう。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:40.520",
+          "text": "You finish at 5.30, okay?",
+          "text_ja": "5時半に終わりだ、いいな？"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:44.320",
+          "text": "Finish at 5.30.",
+          "text_ja": "5時半に終わりだ。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:45.440",
+          "text": "Okay.",
+          "text_ja": "はい。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:45.860",
+          "text": "I approve your overtime. I'm not approving this overtime.",
+          "text_ja": "君の残業は私が承認する。この残業は承認しない。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:48.860",
+          "text": "Okay, I can go home.",
+          "text_ja": "分かりました、帰ります。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:50.220",
+          "text": "Go home. You're not invited to the party.",
+          "text_ja": "帰りなさい。君はこのパーティーに招待されていない。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:51.780",
+          "text": "Okay.",
+          "text_ja": "はい。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:53.180",
+          "text": "I will talk to Shane.",
+          "text_ja": "シェーンに話します。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:56.160",
+          "text": "No?",
+          "text_ja": "だめだ。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:56.900",
+          "text": "No, you'll go home.",
+          "text_ja": "だめだ、帰りなさい。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:58.680",
+          "text": "You can talk to Shane tomorrow or the next day.",
+          "text_ja": "シェーンには明日か明後日に話せばいい。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "03:00.560",
+          "text": "Or I can talk to Shane today?",
+          "text_ja": "それか、今日シェーンに話してもいいですか？"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "03:03.640",
+          "text": "No, because you report to me.",
+          "text_ja": "だめだ、君は私の直属の部下だからだ。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "03:05.400",
+          "text": "Yeah.",
+          "text_ja": "はい。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "03:05.940",
+          "text": "Okay, why are you being difficult?",
+          "text_ja": "おい、なぜそう面倒なんだ？"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "03:06.960",
+          "text": "Okay, I will just say bye to Shane.",
+          "text_ja": "分かりました、シェーンに挨拶だけしていきます。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "03:08.420",
+          "text": "Okay, goodbye.",
+          "text_ja": "わかった、さようなら。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "03:09.700",
+          "text": "To Shane.",
+          "text_ja": "シェーンにです。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "03:10.420",
+          "text": "Yeah.",
+          "text_ja": "はい。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "03:10.940",
+          "text": "I will say bye to Shane.",
+          "text_ja": "シェーンに挨拶していきます。"
+        }
+      ]
+    },
+    {
+      "evidence_type": "audio_recording",
+      "title_en": "Steve Micromanaging and Claiming I was late",
+      "title_ja": "Steveがマイクロマネージングで、私を遅刻者と主張する",
+      "evidence_file_title": "audio02_2025-03-03_SteveMicromanagingAndClaimingILate",
+      "audio_file_path": "audio_evidence/Steve micromanaging and claiming I was late.m4a",
+      "recording_details": {
+        "date_recorded": "2025-03-03",
+        "time_recorded": "09:03",
+        "duration": "3:34",
+        "incident_start": "2:05",
+        "location": "F&B Office",
+        "recording_device": "Android phone"
+      },
+      "participants": [
+        {"name": "Steven FORRESTER", "position": "Director of F&B"},
+        {"name": "David DELACRUZ", "position": "F&B Marketing Coordinator"}
+      ],
+      "conversation_summary": "Steven Forrester (Steve) greets David Delacruz (David) and immediately instructs him to be on time, specifying that David should be at his desk by 9 am. David asserts that he is on time. Steve repeats his expectation for punctuality. David quietly maintains he was on time, prompting a challenging \"Excuse me?\" from Steve. David then retracts his assertion, saying, \"Nothing, sure.\" Steve concludes by firmly restating the requirement to be at his desk by 9 am. This exchange highlights Steve's perception of David's tardiness and his micromanagement, with David initially defending himself but quickly yielding.",
+      "conversation_summary_ja": "スティーブン・フォレスター（スティーブ）はデビッド・デラクルーズ（デビッド）に朝の挨拶をするとすぐに、時間通りに、具体的には午前9時には席に着いているよう指示します。デビッドは時間通りだと主張します。スティーブは時間厳守の期待を繰り返します。デビッドが自分は時間通りだったと静かに言い張ると、スティーブは「何だって？」と詰問します。デビッドはその後、「いえ、何も。分かりました」と主張を撤回します。スティーブは最後に、午前9時までに席に着いているという要求を断固として繰り返します。このやり取りは、スティーブがデビッドの遅刻を認識し、マイクロマネジメントを行っていること、そしてデビッドが最初は自己弁護しつつもすぐに屈したことを浮き彫りにしています。",
+      "transcript": [
+        {
+          "speaker": "Steve",
+          "timestamp": "02:05.000",
+          "text": "Morning David",
+          "text_ja": "おはよう、デビッド。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:06.720",
+          "text": "Morning",
+          "text_ja": "おはようございます。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:07.640",
+          "text": "Welcome back",
+          "text_ja": "お帰りなさい。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:08.320",
+          "text": "Thank you",
+          "text_ja": "ありがとうございます。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:09.640",
+          "text": "please be on time",
+          "text_ja": "時間通りに来るように。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:10.320",
+          "text": "I am on time",
+          "text_ja": "時間通りですよ。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:11.640",
+          "text": "Please be at your desk at 9am",
+          "text_ja": "午前9時には席にいるようにしてください。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:12.320",
+          "text": "Yeah, sure",
+          "text_ja": "はい、もちろんです。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:13.640",
+          "text": "Simple expectations, be on time",
+          "text_ja": "簡単なことだ、時間通りに。"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:14.320",
+          "text": "I was on time",
+          "text_ja": "時間通りでしたよ。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:15.640",
+          "text": "Excuse me?",
+          "text_ja": "何だって？"
+        },
+        {
+          "speaker": "David",
+          "timestamp": "02:16.320",
+          "text": "Nothing, sure.",
+          "text_ja": "いえ、何も。分かりました。"
+        },
+        {
+          "speaker": "Steve",
+          "timestamp": "02:17.640",
+          "text": "At your desk by 9am",
+          "text_ja": "午前9時までに席についていること。"
+        }
+      ]
+    }
+  ]
+}
